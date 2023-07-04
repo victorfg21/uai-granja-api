@@ -1,8 +1,8 @@
 ﻿namespace UaiGranja.Avicultura.Domain.Enums
 {
-    public enum TipoHistoricoEnum
+    public enum TipoHistoricoPesagemEnum
     {
-        Unidade = 0,
-        Media = 1
+        Pesagem = 0,
+        Abate = 1
     }
 }

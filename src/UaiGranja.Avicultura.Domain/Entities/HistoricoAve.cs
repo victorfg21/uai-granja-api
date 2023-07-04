@@ -1,14 +1,13 @@
 ﻿using FluentValidation;
 using UaiGranja.Avicultura.Domain.Enums;
+using UaiGranja.Avicultura.Domain.ValueObjects;
 using UaiGranja.Core.DomainObjects;
 
 namespace UaiGranja.Avicultura.Domain.Entities
 {
     public class HistoricoAve : Entity
     {
-        public decimal Peso { get; private set; }
-        public int IdadePesagem { get; private set; }
-        public TipoHistoricoEnum TipoHistorico { get; private set; }
+        public Pesagem Pesagem { get; private set; }
         public Guid? AveId { get; private set; }
         public Guid? LoteId { get; private set; }
 
@@ -16,40 +15,56 @@ namespace UaiGranja.Avicultura.Domain.Entities
         public Ave Ave { get; private set; }
         public Lote Lote { get; private set; }
 
-        public HistoricoAve(decimal peso, int idadePesagem)
-        {
-            Peso = peso;
-            IdadePesagem = idadePesagem;
-        }
-
         public HistoricoAve() { } // ORM 
-
-        internal void AssociarAve(Guid aveId)
-        {
-            AveId = aveId;
-            TipoHistorico = TipoHistoricoEnum.Unidade;
-        }
-
-        internal void AssociarLote(Guid loteId)
-        {
-            LoteId = loteId;
-            TipoHistorico = TipoHistoricoEnum.Media;
-        }
 
         public override bool EhValido()
         {
+            ValidationResult = new Pesagem.PesagemValidation().Validate(Pesagem);
+            var pesagemValida = ValidationResult.IsValid;
+
             ValidationResult = new HistoricoAveValidation().Validate(this);
-            return ValidationResult.IsValid;
+            var historicoValido = ValidationResult.IsValid;
+
+            return pesagemValida && historicoValido;
         }
-    }
 
-    public class HistoricoAveValidation : AbstractValidator<HistoricoAve>
-    {
-        public HistoricoAveValidation()
+        public static class HistoricoAveFactory
         {
-            RuleFor(c => c.Peso).GreaterThan(0).WithMessage("Deve ser informado um peso superior a 0 quilograma.");
+            public static HistoricoAve NovaPesagemAve(Ave ave, TipoHistoricoPesagemEnum tipoHistorico, TipoPesagemEnum TipoPesagem, decimal peso)
+            {
+                var historico = new HistoricoAve
+                {
+                    AveId = ave.Id,
+                    Pesagem = new Pesagem(tipoHistorico, TipoPesagem, peso, ave.ObterIdadeAve())
+                };
 
-            RuleFor(c => c.IdadePesagem).GreaterThan(0).WithMessage("Deve ser informado uma idade superior a 0 dias.");
+                return historico.EhValido() ? historico : throw new DomainException("Histórico inválido.");
+            }
+
+            public static HistoricoAve NovaPesagemLote(Lote lote, TipoHistoricoPesagemEnum tipoHistorico, TipoPesagemEnum TipoPesagem, decimal peso)
+            {
+                var historico = new HistoricoAve
+                {
+                    LoteId = lote.Id,
+                    Pesagem = new Pesagem(tipoHistorico, TipoPesagem, peso, lote.ObterIdadeLote())
+                };
+
+                return historico.EhValido() ? historico : throw new DomainException("Histórico inválido.");
+            }
+        }
+
+        public class HistoricoAveValidation : AbstractValidator<HistoricoAve>
+        {
+            public HistoricoAveValidation()
+            {
+                RuleFor(c => c).Must(HistoricoEstaAssociado).WithMessage("Histórico deve ser associado com uma ave ou um lote válido.");
+            }
+
+            private bool HistoricoEstaAssociado(HistoricoAve historico)
+            {
+                return (historico.AveId.HasValue && historico.AveId.Value != Guid.Empty)
+                        || (historico.LoteId.HasValue && historico.LoteId.Value != Guid.Empty);
+            }
         }
     }
 }

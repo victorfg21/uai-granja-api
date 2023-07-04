@@ -4,8 +4,9 @@ using UaiGranja.Core.DomainObjects;
 
 namespace UaiGranja.Avicultura.Domain.Entities
 {
-    public class Ave : Entity, IAggregateRoot
+    public class Ave : Entity
     {
+        public string Codigo { get; private set; }
         public GeneroAnimalEnum GeneroAnimal { get; private set; }
         public DateTime DataNascimento { get; private set; }
         public Guid TipoAveId { get; private set; }
@@ -19,14 +20,19 @@ namespace UaiGranja.Avicultura.Domain.Entities
         private readonly List<HistoricoAve> _historicos;
         public IReadOnlyCollection<HistoricoAve> Historicos => _historicos;
 
-        public Ave(GeneroAnimalEnum generoAnimal, DateTime dataNascimento, TipoAve tipoAve)
+        public Ave(string codigo, GeneroAnimalEnum generoAnimal, DateTime dataNascimento, TipoAve tipoAve)
         {
+            Codigo = codigo;
             GeneroAnimal = generoAnimal;
             DataNascimento = dataNascimento;
             TipoAve = tipoAve;
+            _historicos = new List<HistoricoAve>();
         }
 
-        public Ave() { } // ORM
+        public Ave()
+        {
+            _historicos = new List<HistoricoAve>();
+        }
 
         internal void AssociarGalinheiro(Guid galinheiroId)
         {
@@ -38,11 +44,28 @@ namespace UaiGranja.Avicultura.Domain.Entities
             LoteId = loteId;
         }
 
-        public void RealizarPesagem(HistoricoAve historico)
+        public int ObterIdadeAve()
         {
-            if (!historico.EhValido()) return;
+            return (DateTime.Today - DataNascimento).Days;
+        }
 
-            historico.AssociarAve(Id);
+        public bool EstaVivo()
+        {
+            if (!Historicos.Any()) return true;
+            return !Historicos.Any(x => x.Pesagem.TipoHistorico == TipoHistoricoPesagemEnum.Abate);
+        }
+
+        public void RealizarPesagem(decimal peso)
+        {
+            if (!EstaVivo()) throw new DomainException("Ave abatida não pode ser pesada.");
+            var historico = HistoricoAve.HistoricoAveFactory.NovaPesagemAve(this, TipoHistoricoPesagemEnum.Pesagem, TipoPesagemEnum.Unidade, peso);
+            _historicos.Add(historico);
+        }
+
+        public void RealizarAbate(decimal peso)
+        {
+            if (!EstaVivo()) throw new DomainException("Ave já foi abatida.");
+            var historico = HistoricoAve.HistoricoAveFactory.NovaPesagemAve(this, TipoHistoricoPesagemEnum.Abate, TipoPesagemEnum.Unidade, peso);
             _historicos.Add(historico);
         }
 
@@ -57,6 +80,8 @@ namespace UaiGranja.Avicultura.Domain.Entities
     {
         public AveValidation()
         {
+            RuleFor(c => c.Codigo).NotEmpty().WithMessage("Deve ser informado um código numérico para identificação da ave.");
+
             RuleFor(c => c.GeneroAnimal).IsInEnum().WithMessage("Deve ser informado uma opção dentre os valores permitido do enum do gênero do animal.");
 
             RuleFor(c => c.DataNascimento).NotNull().WithMessage("Deve ser informada uma data de nascimento da ave válida.");

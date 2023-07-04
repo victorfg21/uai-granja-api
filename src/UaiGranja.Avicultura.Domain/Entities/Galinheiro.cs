@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using NerdStore.Core.DomainObjects;
 using UaiGranja.Core.DomainObjects;
 
 namespace UaiGranja.Avicultura.Domain.Entities
@@ -25,9 +24,15 @@ namespace UaiGranja.Avicultura.Domain.Entities
             Area = area;
             Capacidade = capacidadeTotal;
             UtilizaLote = utilizaLote;
+            _aves = new List<Ave>();
+            _lotes = new List<Lote>();
         }
 
-        public Galinheiro() { } // ORM
+        protected Galinheiro()
+        {
+            _aves = new List<Ave>();
+            _lotes = new List<Lote>();
+        }
 
         public void AdicionarLote(Lote lote)
         {
@@ -64,7 +69,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
             else
             {
                 if (_aves.Count > Capacidade) throw new DomainException("Quantidade de aves permitidas foi excedida.");
-
+                if (_aves.Any(x => x.Codigo == ave.Codigo && ave.EstaVivo())) throw new DomainException("Código da ave já está cadastrado em ave viva.");
                 ave.AssociarGalinheiro(Id);
                 _aves.Add(ave);
             }

@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using UaiGranja.Avicultura.Domain.Enums;
 using UaiGranja.Core.DomainObjects;
 
 namespace UaiGranja.Avicultura.Domain.Entities
@@ -15,11 +16,14 @@ namespace UaiGranja.Avicultura.Domain.Entities
         public IReadOnlyCollection<Ave> Aves => _aves;
         private readonly List<HistoricoAve> _historicos;
         public IReadOnlyCollection<HistoricoAve> Historicos => _historicos;
+        public DateTime DataNascimento => Aves.FirstOrDefault()!.DataNascimento;
 
-        public Lote(string codigo = null, int capacidade = 1)
+        public Lote(string codigo = "", int capacidade = 1)
         {
             Capacidade = capacidade;
             Codigo = !string.IsNullOrEmpty(codigo) ? codigo : GerarCodigoLotePadrao();
+            _aves = new List<Ave>();
+            _historicos = new List<HistoricoAve>();
         }
 
         public Lote() { } // ORM
@@ -53,11 +57,27 @@ namespace UaiGranja.Avicultura.Domain.Entities
             _aves.Add(ave);
         }
 
-        public void RealizarPesagem(HistoricoAve historico)
+        public int ObterIdadeLote()
         {
-            if (!historico.EhValido()) return;
+            return (DateTime.Today - DataNascimento).Days;
+        }
 
-            historico.AssociarAve(Id);
+        public bool EstaVivo()
+        {
+            return !Historicos.Any(x => x.Pesagem.TipoHistorico == TipoHistoricoPesagemEnum.Abate);
+        }
+
+        public void RealizarPesagem(decimal peso)
+        {
+            if (!EstaVivo()) throw new DomainException("Lote abatido não pode ser pesado.");
+            var historico = HistoricoAve.HistoricoAveFactory.NovaPesagemLote(this, TipoHistoricoPesagemEnum.Pesagem, TipoPesagemEnum.Unidade, peso);
+            _historicos.Add(historico);
+        }
+
+        public void RealizarAbate(decimal peso)
+        {
+            if (!EstaVivo()) throw new DomainException("Lote já foi abatido.");
+            var historico = HistoricoAve.HistoricoAveFactory.NovaPesagemLote(this, TipoHistoricoPesagemEnum.Abate, TipoPesagemEnum.Unidade, peso);
             _historicos.Add(historico);
         }
 
