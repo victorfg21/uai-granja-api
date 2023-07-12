@@ -17,7 +17,7 @@ namespace UaiGranja.Avicultura.Domain.Tests.Fixtures
     {
         public void Dispose() { }
 
-        public Ave ObterAveViva()
+        public Ave ObterAveValidaViva()
         {
             return new Ave("001", GeneroAnimalEnum.Macho, new DateTime(2023, 1, 1), new TipoAve(RacaEnum.CaipiraComum, PropositoCriacaoEnum.Hibrido, 2000, 182));
         }

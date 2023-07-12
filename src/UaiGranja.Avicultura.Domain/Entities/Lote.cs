@@ -16,7 +16,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
         public IReadOnlyCollection<Ave> Aves => _aves;
         private readonly List<HistoricoAve> _historicos;
         public IReadOnlyCollection<HistoricoAve> Historicos => _historicos;
-        public DateTime DataNascimento => Aves.FirstOrDefault()!.DataNascimento;
+        public DateTime? DataNascimento => Aves.FirstOrDefault()?.DataNascimento;
 
         public Lote(string codigo = "", int capacidade = 1)
         {
@@ -26,7 +26,11 @@ namespace UaiGranja.Avicultura.Domain.Entities
             _historicos = new List<HistoricoAve>();
         }
 
-        public Lote() { } // ORM
+        public Lote()
+        {
+            _aves = new List<Ave>();
+            _historicos = new List<HistoricoAve>();
+        } 
 
         internal void AssociarGalinheiro(Guid galinheiroId)
         {
@@ -36,7 +40,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
         internal string GerarCodigoLotePadrao()
         {
             var idString = Id.ToString();
-            return $"L-{idString.Substring(idString.Length - 12, idString.Length).ToUpper()}";
+            return $"L-{idString.Substring(idString.Length - 12, 12).ToUpper()}";
         }
 
         public void AdicionarAves(IEnumerable<Ave> aves)
@@ -49,9 +53,8 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
         public void AdicionarAve(Ave ave)
         {
-            if (!ave.EhValido()) throw new AggregateDomainException(AggregateDomainException.GetAggregateDomainException(ValidationResult.Errors));
-            if (!Galinheiro.UtilizaLote) throw new DomainException("Galinheiro não utiliza lote, alterar para permitir inclusão de aves.");
-            if (_aves.Count > Capacidade) throw new DomainException("Quantidade de aves permitidas foi excedida.");
+            if (!ave.EhValido()) throw new AggregateDomainException(AggregateDomainException.GetAggregateDomainException(ave.ValidationResult.Errors));
+            if (_aves.Count >= Capacidade) throw new DomainException("Quantidade de aves permitidas foi excedida.");
 
             ave.AssociarLote(Id);
             _aves.Add(ave);
@@ -59,7 +62,8 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
         public int ObterIdadeLote()
         {
-            return (DateTime.Today - DataNascimento).Days;
+            if(!DataNascimento.HasValue) return 0;
+            return (DateTime.Today - DataNascimento.Value).Days;
         }
 
         public bool EstaVivo()
@@ -69,6 +73,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
         public void RealizarPesagem(decimal peso)
         {
+            if (!Aves.Any()) throw new DomainException("Lote não possui aves.");
             if (!EstaVivo()) throw new DomainException("Lote abatido não pode ser pesado.");
             var historico = HistoricoAve.HistoricoAveFactory.NovaPesagemLote(this, TipoHistoricoPesagemEnum.Pesagem, TipoPesagemEnum.Unidade, peso);
             _historicos.Add(historico);
@@ -76,12 +81,13 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
         public void RealizarAbate(decimal peso)
         {
+            if (!Aves.Any()) throw new DomainException("Lote não possui aves.");
             if (!EstaVivo()) throw new DomainException("Lote já foi abatido.");
             var historico = HistoricoAve.HistoricoAveFactory.NovaPesagemLote(this, TipoHistoricoPesagemEnum.Abate, TipoPesagemEnum.Unidade, peso);
             _historicos.Add(historico);
         }
 
-        public void AlterarCodigoLote(string codigo)
+        public void AlterarCodigo(string codigo)
         {
             Codigo = codigo;
         }

@@ -90,6 +90,6 @@ namespace UaiGranja.Avicultura.Domain.Entities
         }
 
         private bool TipoAveEhValida(TipoAve tipoAve)
-            => tipoAve.EhValido();
+            => tipoAve is not null && tipoAve.EhValido();
     }
 }

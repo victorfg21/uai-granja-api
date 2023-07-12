@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using System.Runtime.Intrinsics.X86;
 using UaiGranja.Avicultura.Domain.Enums;
 using UaiGranja.Avicultura.Domain.ValueObjects;
 using UaiGranja.Core.DomainObjects;
@@ -32,6 +33,8 @@ namespace UaiGranja.Avicultura.Domain.Entities
         {
             public static HistoricoAve NovaPesagemAve(Ave ave, TipoHistoricoPesagemEnum tipoHistorico, TipoPesagemEnum TipoPesagem, decimal peso)
             {
+                if (ave is null || ave.Id == Guid.Empty) throw new DomainException("Histórico inválido.");
+
                 var historico = new HistoricoAve
                 {
                     AveId = ave.Id,
@@ -43,6 +46,8 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
             public static HistoricoAve NovaPesagemLote(Lote lote, TipoHistoricoPesagemEnum tipoHistorico, TipoPesagemEnum TipoPesagem, decimal peso)
             {
+                if (lote is null || lote.Id == Guid.Empty) throw new DomainException("Histórico inválido.");
+
                 var historico = new HistoricoAve
                 {
                     LoteId = lote.Id,

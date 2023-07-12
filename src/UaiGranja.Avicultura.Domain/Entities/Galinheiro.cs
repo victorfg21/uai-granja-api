@@ -28,7 +28,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
             _lotes = new List<Lote>();
         }
 
-        protected Galinheiro()
+        public Galinheiro()
         {
             _aves = new List<Ave>();
             _lotes = new List<Lote>();
@@ -40,7 +40,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
             if (!UtilizaLote) throw new DomainException("Galinheiro não utiliza lote, alterar para permitir inclusão de lote");
 
-            if (Capacidade > _lotes.Count) throw new DomainException("Quantidade de lotes permitidos foi excedido");
+            if (_lotes.Count >= Capacidade) throw new DomainException("Quantidade de lotes permitidos foi excedido");
 
             lote.AssociarGalinheiro(Id);
             _lotes.Add(lote);
@@ -62,17 +62,24 @@ namespace UaiGranja.Avicultura.Domain.Entities
             {
                 var lote = _lotes.FirstOrDefault(x => x.Id == loteId);
                 if (lote is null) throw new DomainException("Lote não encontrado.");
-                if (lote.Aves.Count > lote.Capacidade) throw new DomainException("Quantidade de aves permitidas foi excedida.");
+                if (lote.Aves.Count >= lote.Capacidade) throw new DomainException("Quantidade de aves permitidas foi excedida.");
 
                 lote.AdicionarAve(ave);
             }
             else
             {
-                if (_aves.Count > Capacidade) throw new DomainException("Quantidade de aves permitidas foi excedida.");
-                if (_aves.Any(x => x.Codigo == ave.Codigo && ave.EstaVivo())) throw new DomainException("Código da ave já está cadastrado em ave viva.");
+                if (_aves.Count >= Capacidade) throw new DomainException("Quantidade de aves permitidas foi excedida.");
+                if (_aves.Any(x => x.Codigo == ave.Codigo && x.EstaVivo())) throw new DomainException("Código da ave já está cadastrado em ave viva.");
                 ave.AssociarGalinheiro(Id);
                 _aves.Add(ave);
             }
+        }
+
+        public void RealizarAbateAve(Guid aveId, decimal peso)
+        {
+            var ave = _aves.FirstOrDefault(x => x.Id == aveId);
+            if (ave is null) throw new DomainException("Ave não está cadastrada.");
+            ave.RealizarAbate(peso);
         }
 
         public void AlterarEstruturaGalinheiro()

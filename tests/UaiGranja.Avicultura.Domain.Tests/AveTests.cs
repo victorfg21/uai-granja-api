@@ -21,7 +21,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         public void Ave_RealizarPesagem_RealizarPesagemAveViva()
         {
             //Arrange
-            var ave = _aveTestsFixture.ObterAveViva();
+            var ave = _aveTestsFixture.ObterAveValidaViva();
 
             //Act
             ave.RealizarPesagem(1000);
@@ -35,7 +35,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         public void Ave_RealizarAbate_RealizarPesagemAveAbatida()
         {
             //Arrange
-            var ave = _aveTestsFixture.ObterAveViva();
+            var ave = _aveTestsFixture.ObterAveValidaViva();
 
             //Act
             ave.RealizarAbate(1000);
@@ -49,7 +49,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         public void Ave_RealizarAbate_RealizarAbateAveAbatida()
         {
             //Arrange
-            var ave = _aveTestsFixture.ObterAveViva();
+            var ave = _aveTestsFixture.ObterAveValidaViva();
 
             //Act
             ave.RealizarAbate(1000);
@@ -63,7 +63,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         public void Ave_EstaVivo_AveDeveEstarViva()
         {
             //Arrange
-            var ave = _aveTestsFixture.ObterAveViva();
+            var ave = _aveTestsFixture.ObterAveValidaViva();
 
             //Act
             var vivo = ave.EstaVivo();
@@ -80,7 +80,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         public void Ave_EstaVivo_AveDeveEstarAbatida(decimal peso)
         {
             //Arrange
-            var ave = _aveTestsFixture.ObterAveViva();
+            var ave = _aveTestsFixture.ObterAveValidaViva();
 
             //Act
             ave.RealizarAbate(peso);
@@ -109,7 +109,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         public void Ave_EstaVivo_AveDeveEstarValida()
         {
             //Arrange
-            var ave = _aveTestsFixture.ObterAveViva();
+            var ave = _aveTestsFixture.ObterAveValidaViva();
 
             //Act
             ave.EhValido();
