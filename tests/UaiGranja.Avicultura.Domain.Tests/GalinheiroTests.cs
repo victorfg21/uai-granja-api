@@ -91,20 +91,6 @@ namespace UaiGranja.Avicultura.Domain.Tests
             Assert.Throws<DomainException>(() => galinheiro.AdicionarAve(_galinheiroTestsFixture.ObterAveValidaViva()));
         }
 
-        [Fact(DisplayName = "Não Deve Adicionar Ave Galinheiro Inválido")]
-        [Trait("Galinheiro", "Lote Entity Trait")]
-        public void Galinheiro_AdicionarAve_NaoDeveAdicionarAveGalinheiroInvalido()
-        {
-            //Arrange
-            var galinheiro = new Galinheiro();
-
-            //Act
-            galinheiro.AdicionarAve(_galinheiroTestsFixture.ObterAveValidaViva());
-
-            //Assert
-            Assert.Throws<DomainException>(() => galinheiro.AdicionarAve(_galinheiroTestsFixture.ObterAveValidaViva()));
-        }
-
         [Fact(DisplayName = "Deve Adicionar Código Não Utilizado em Ave Viva")]
         [Trait("Galinheiro", "Lote Entity Trait")]
         public void Galinheiro_AdicionarAve_DeveAdicionarAveCodigoNaoUtilizadoEmAveViva()
