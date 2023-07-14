@@ -17,7 +17,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Realizar Pesagem Ave Viva")]
-        [Trait("Ave", "Ave Entity Trait")]
+        [Trait("Avicultura", "Ave Entity Trait")]
         public void Ave_RealizarPesagem_RealizarPesagemAveViva()
         {
             //Arrange
@@ -31,7 +31,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Realizar Pesagem Ave Já Abatida")]
-        [Trait("Ave", "Ave Entity Trait")]
+        [Trait("Avicultura", "Ave Entity Trait")]
         public void Ave_RealizarAbate_RealizarPesagemAveAbatida()
         {
             //Arrange
@@ -45,7 +45,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Realizar Pesagem Ave Já Abatida")]
-        [Trait("Ave", "Ave Entity Trait")]
+        [Trait("Avicultura", "Ave Entity Trait")]
         public void Ave_RealizarAbate_RealizarAbateAveAbatida()
         {
             //Arrange
@@ -59,7 +59,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Verificar Ave Está Viva")]
-        [Trait("Ave", "Ave Entity Trait")]
+        [Trait("Avicultura", "Ave Entity Trait")]
         public void Ave_EstaVivo_AveDeveEstarViva()
         {
             //Arrange
@@ -73,7 +73,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Theory(DisplayName = "Verificar Ave Estar Abatida")]
-        [Trait("Ave", "Ave Entity Trait")]
+        [Trait("Avicultura", "Ave Entity Trait")]
         [InlineData(1500)]
         [InlineData(1800.52)]
         [InlineData(1)]
@@ -91,7 +91,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Verificar Ave Está Viva e Não Possui Historico")]
-        [Trait("Ave", "Ave Entity Trait")]
+        [Trait("Avicultura", "Ave Entity Trait")]
         public void Ave_EstaVivo_AveDeveEstarVivaNaoPossuiHistorico()
         {
             //Arrange
@@ -105,7 +105,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Verificar Ave é Valida")]
-        [Trait("Ave", "Ave Entity Trait")]
+        [Trait("Avicultura", "Ave Entity Trait")]
         public void Ave_EstaVivo_AveDeveEstarValida()
         {
             //Arrange
@@ -119,7 +119,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Verificar Ave é Invalida")]
-        [Trait("Ave", "Ave Entity Trait")]
+        [Trait("Avicultura", "Ave Entity Trait")]
         public void Ave_EstaVivo_AveDeveEstarInvalida()
         {
             //Arrange

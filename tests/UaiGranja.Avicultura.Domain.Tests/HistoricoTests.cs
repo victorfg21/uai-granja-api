@@ -9,7 +9,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
     public class HistoricoAveTests
     {
         [Fact(DisplayName = "Não Deve Pesar Ave Inválida")]
-        [Trait("Historico", "Historico Entity Trait")]
+        [Trait("Avicultura", "Historico Entity Trait")]
         public void Historico_NovaPesagemAve_AveInvalidaNaoDevePesar()
         {
             //Assert
@@ -22,7 +22,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Não Deve Pesar Lote Inválido")]
-        [Trait("Historico", "Historico Entity Trait")]
+        [Trait("Avicultura", "Historico Entity Trait")]
         public void Historico_NovaPesagemLote_LoteInvalidoNaoDevePesar()
         {
             //Assert

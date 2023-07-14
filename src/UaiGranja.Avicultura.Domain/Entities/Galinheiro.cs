@@ -56,8 +56,6 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
         public void AdicionarAve(Ave ave, Guid loteId = default)
         {
-            if (!ave.EhValido()) return;
-
             if (UtilizaLote)
             {
                 var lote = _lotes.FirstOrDefault(x => x.Id == loteId);
@@ -68,6 +66,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
             }
             else
             {
+                if (!ave.EhValido()) throw new AggregateDomainException(AggregateDomainException.GetAggregateDomainException(ave.ValidationResult.Errors));
                 if (_aves.Count >= Capacidade) throw new DomainException("Quantidade de aves permitidas foi excedida.");
                 if (_aves.Any(x => x.Codigo == ave.Codigo && x.EstaVivo())) throw new DomainException("Código da ave já está cadastrado em ave viva.");
                 ave.AssociarGalinheiro(Id);
@@ -77,30 +76,40 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
         public void RealizarAbateAve(Guid aveId, decimal peso)
         {
+            if (UtilizaLote) throw new DomainException("Somente lote pode ser abatido.");
             var ave = _aves.FirstOrDefault(x => x.Id == aveId);
             if (ave is null) throw new DomainException("Ave não está cadastrada.");
             ave.RealizarAbate(peso);
         }
 
+        public void RealizarAbateLote(Guid loteId, decimal peso)
+        {
+            if (!UtilizaLote) throw new DomainException("Galinheiro não utiliza configuração de lote.");
+            var lote = _lotes.FirstOrDefault(x => x.Id == loteId);
+            if (lote is null) throw new DomainException("Lote não está cadastrado.");
+            lote.RealizarAbate(peso);
+        }
+
         public void AlterarEstruturaGalinheiro()
         {
             if (UtilizaLote)
-                foreach (var ave in _lotes.SelectMany(x => x.Aves).ToList())
-                {
-                    AdicionarAve(ave);
-                    _lotes.RemoveAll(x => x.Id == x.Id);
-                }
-
-            if (!UtilizaLote)
             {
-                var lote = new Lote();
+                AtualizarGalinheiroUtilizaLote();
+                AdicionarAves(_lotes.SelectMany(x => x.Aves));
+                _lotes.RemoveAll(x => x.Id == x.Id);
+            }
+            else
+            {
+                AtualizarGalinheiroUtilizaLote();
+                var lote = new Lote(capacidade: Capacidade);
                 lote.AdicionarAves(_aves);
                 AdicionarLote(lote);
                 _aves.RemoveAll(x => x.Id == x.Id);
             }
-
-            UtilizaLote = !UtilizaLote;
         }
+
+        private void AtualizarGalinheiroUtilizaLote()
+            => UtilizaLote = !UtilizaLote;
 
         public override bool EhValido()
         {

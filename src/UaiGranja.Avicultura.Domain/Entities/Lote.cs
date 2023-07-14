@@ -9,6 +9,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
         public string Codigo { get; private set; }
         public int Capacidade { get; private set; }
         public Guid GalinheiroId { get; private set; }
+        public bool Finalizado { get; private set; }
 
         /* EF Relation */
         public Galinheiro Galinheiro { get; private set; }
@@ -53,6 +54,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
         public void AdicionarAve(Ave ave)
         {
+            if (Finalizado) throw new DomainException("Não é permitido adicionar aves em um lote abatido. Deve ser criado um novo lote.");
             if (!ave.EhValido()) throw new AggregateDomainException(AggregateDomainException.GetAggregateDomainException(ave.ValidationResult.Errors));
             if (_aves.Count >= Capacidade) throw new DomainException("Quantidade de aves permitidas foi excedida.");
 
@@ -68,7 +70,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
 
         public bool EstaVivo()
         {
-            return !Historicos.Any(x => x.Pesagem.TipoHistorico == TipoHistoricoPesagemEnum.Abate);
+            return _aves.Count() > 0 && !Finalizado;
         }
 
         public void RealizarPesagem(decimal peso)
@@ -85,6 +87,7 @@ namespace UaiGranja.Avicultura.Domain.Entities
             if (!EstaVivo()) throw new DomainException("Lote já foi abatido.");
             var historico = HistoricoAve.HistoricoAveFactory.NovaPesagemLote(this, TipoHistoricoPesagemEnum.Abate, TipoPesagemEnum.Unidade, peso);
             _historicos.Add(historico);
+            Finalizado = true;
         }
 
         public void AlterarCodigo(string codigo)

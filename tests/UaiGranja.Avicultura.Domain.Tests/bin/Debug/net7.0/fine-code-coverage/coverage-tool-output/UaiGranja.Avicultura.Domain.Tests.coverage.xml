@@ -1,106 +1,106 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.7472" branch-rate="0.6224000000000001" version="1.9" timestamp="1689131110" lines-covered="482" lines-valid="645" branches-covered="61" branches-valid="98">
+<coverage line-rate="0.8321" branch-rate="0.7884" version="1.9" timestamp="1689294672" lines-covered="605" lines-valid="727" branches-covered="82" branches-valid="104">
   <sources>
     <source>C:\Users\victo\</source>
   </sources>
   <packages>
-    <package name="UaiGranja.Avicultura.Domain" line-rate="0.8419" branch-rate="0.782" complexity="142">
+    <package name="UaiGranja.Avicultura.Domain" line-rate="0.9767" branch-rate="0.9761" complexity="149">
       <classes>
         <class name="UaiGranja.Avicultura.Domain.ValueObjects.Pesagem" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\ValueObjects\Pesagem.cs" line-rate="1" branch-rate="1" complexity="6">
           <methods>
             <method name="get_TipoHistorico" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="41" branch="False" />
+                <line number="8" hits="38" branch="False" />
               </lines>
             </method>
             <method name="get_TipoPesagem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="30" branch="False" />
+                <line number="9" hits="32" branch="False" />
               </lines>
             </method>
             <method name="get_Peso" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="30" branch="False" />
+                <line number="10" hits="32" branch="False" />
               </lines>
             </method>
             <method name="get_IdadePesagem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="30" branch="False" />
+                <line number="11" hits="32" branch="False" />
               </lines>
             </method>
             <method name="get_DataPesagem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="15" branch="False" />
+                <line number="12" hits="16" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(UaiGranja.Avicultura.Domain.Enums.TipoHistoricoPesagemEnum,UaiGranja.Avicultura.Domain.Enums.TipoPesagemEnum,System.Decimal,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="15" branch="False" />
-                <line number="15" hits="15" branch="False" />
-                <line number="16" hits="15" branch="False" />
-                <line number="17" hits="15" branch="False" />
-                <line number="18" hits="15" branch="False" />
-                <line number="19" hits="15" branch="False" />
-                <line number="20" hits="15" branch="False" />
-                <line number="21" hits="15" branch="False" />
+                <line number="14" hits="16" branch="False" />
+                <line number="15" hits="16" branch="False" />
+                <line number="16" hits="16" branch="False" />
+                <line number="17" hits="16" branch="False" />
+                <line number="18" hits="16" branch="False" />
+                <line number="19" hits="16" branch="False" />
+                <line number="20" hits="16" branch="False" />
+                <line number="21" hits="16" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="41" branch="False" />
-            <line number="9" hits="30" branch="False" />
-            <line number="10" hits="30" branch="False" />
-            <line number="11" hits="30" branch="False" />
-            <line number="12" hits="15" branch="False" />
-            <line number="14" hits="15" branch="False" />
-            <line number="15" hits="15" branch="False" />
-            <line number="16" hits="15" branch="False" />
-            <line number="17" hits="15" branch="False" />
-            <line number="18" hits="15" branch="False" />
-            <line number="19" hits="15" branch="False" />
-            <line number="20" hits="15" branch="False" />
-            <line number="21" hits="15" branch="False" />
+            <line number="8" hits="38" branch="False" />
+            <line number="9" hits="32" branch="False" />
+            <line number="10" hits="32" branch="False" />
+            <line number="11" hits="32" branch="False" />
+            <line number="12" hits="16" branch="False" />
+            <line number="14" hits="16" branch="False" />
+            <line number="15" hits="16" branch="False" />
+            <line number="16" hits="16" branch="False" />
+            <line number="17" hits="16" branch="False" />
+            <line number="18" hits="16" branch="False" />
+            <line number="19" hits="16" branch="False" />
+            <line number="20" hits="16" branch="False" />
+            <line number="21" hits="16" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Avicultura.Domain.ValueObjects.Pesagem/PesagemValidation" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\ValueObjects\Pesagem.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="15" branch="False" />
-                <line number="26" hits="15" branch="False" />
-                <line number="27" hits="15" branch="False" />
-                <line number="29" hits="15" branch="False" />
-                <line number="31" hits="15" branch="False" />
-                <line number="33" hits="15" branch="False" />
-                <line number="34" hits="15" branch="False" />
+                <line number="25" hits="16" branch="False" />
+                <line number="26" hits="16" branch="False" />
+                <line number="27" hits="16" branch="False" />
+                <line number="29" hits="16" branch="False" />
+                <line number="31" hits="16" branch="False" />
+                <line number="33" hits="16" branch="False" />
+                <line number="34" hits="16" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="25" hits="15" branch="False" />
-            <line number="26" hits="15" branch="False" />
-            <line number="27" hits="15" branch="False" />
-            <line number="29" hits="15" branch="False" />
-            <line number="31" hits="15" branch="False" />
-            <line number="33" hits="15" branch="False" />
-            <line number="34" hits="15" branch="False" />
+            <line number="25" hits="16" branch="False" />
+            <line number="26" hits="16" branch="False" />
+            <line number="27" hits="16" branch="False" />
+            <line number="29" hits="16" branch="False" />
+            <line number="31" hits="16" branch="False" />
+            <line number="33" hits="16" branch="False" />
+            <line number="34" hits="16" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Avicultura.Domain.Entities.Ave" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\Ave.cs" line-rate="0.9387000000000001" branch-rate="1" complexity="22">
           <methods>
             <method name="get_Codigo" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="104" branch="False" />
+                <line number="9" hits="131" branch="False" />
               </lines>
             </method>
             <method name="get_GeneroAnimal" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="100" branch="False" />
+                <line number="10" hits="123" branch="False" />
               </lines>
             </method>
             <method name="get_DataNascimento" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="120" branch="False" />
+                <line number="11" hits="145" branch="False" />
               </lines>
             </method>
             <method name="get_TipoAveId" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -110,17 +110,17 @@
             </method>
             <method name="get_LoteId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="36" branch="False" />
+                <line number="13" hits="45" branch="False" />
               </lines>
             </method>
             <method name="get_GalinheiroId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="4" branch="False" />
+                <line number="14" hits="8" branch="False" />
               </lines>
             </method>
             <method name="get_TipoAve" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="100" branch="False" />
+                <line number="17" hits="123" branch="False" />
               </lines>
             </method>
             <method name="get_Lote" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -140,16 +140,16 @@
             </method>
             <method name="AssociarGalinheiro" signature="(System.Guid)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="38" hits="4" branch="False" />
-                <line number="39" hits="4" branch="False" />
-                <line number="40" hits="4" branch="False" />
+                <line number="38" hits="8" branch="False" />
+                <line number="39" hits="8" branch="False" />
+                <line number="40" hits="8" branch="False" />
               </lines>
             </method>
             <method name="AssociarLote" signature="(System.Guid)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="43" hits="36" branch="False" />
-                <line number="44" hits="36" branch="False" />
-                <line number="45" hits="36" branch="False" />
+                <line number="43" hits="45" branch="False" />
+                <line number="44" hits="45" branch="False" />
+                <line number="45" hits="45" branch="False" />
               </lines>
             </method>
             <method name="ObterIdadeAve" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -199,22 +199,22 @@
             </method>
             <method name="EhValido" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="73" hits="47" branch="False" />
-                <line number="74" hits="47" branch="False" />
-                <line number="75" hits="47" branch="False" />
-                <line number="76" hits="47" branch="False" />
+                <line number="73" hits="59" branch="False" />
+                <line number="74" hits="59" branch="False" />
+                <line number="75" hits="59" branch="False" />
+                <line number="76" hits="59" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String,UaiGranja.Avicultura.Domain.Enums.GeneroAnimalEnum,System.DateTime,UaiGranja.Avicultura.Domain.Entities.TipoAve)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="53" branch="False" />
-                <line number="24" hits="53" branch="False" />
-                <line number="25" hits="53" branch="False" />
-                <line number="26" hits="53" branch="False" />
-                <line number="27" hits="53" branch="False" />
-                <line number="28" hits="53" branch="False" />
-                <line number="29" hits="53" branch="False" />
-                <line number="30" hits="53" branch="False" />
+                <line number="23" hits="64" branch="False" />
+                <line number="24" hits="64" branch="False" />
+                <line number="25" hits="64" branch="False" />
+                <line number="26" hits="64" branch="False" />
+                <line number="27" hits="64" branch="False" />
+                <line number="28" hits="64" branch="False" />
+                <line number="29" hits="64" branch="False" />
+                <line number="30" hits="64" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -227,22 +227,22 @@
             </method>
           </methods>
           <lines>
-            <line number="9" hits="104" branch="False" />
-            <line number="10" hits="100" branch="False" />
-            <line number="11" hits="120" branch="False" />
+            <line number="9" hits="131" branch="False" />
+            <line number="10" hits="123" branch="False" />
+            <line number="11" hits="145" branch="False" />
             <line number="12" hits="0" branch="False" />
-            <line number="13" hits="36" branch="False" />
-            <line number="14" hits="4" branch="False" />
-            <line number="17" hits="100" branch="False" />
+            <line number="13" hits="45" branch="False" />
+            <line number="14" hits="8" branch="False" />
+            <line number="17" hits="123" branch="False" />
             <line number="18" hits="0" branch="False" />
             <line number="19" hits="0" branch="False" />
             <line number="21" hits="23" branch="False" />
-            <line number="38" hits="4" branch="False" />
-            <line number="39" hits="4" branch="False" />
-            <line number="40" hits="4" branch="False" />
-            <line number="43" hits="36" branch="False" />
-            <line number="44" hits="36" branch="False" />
-            <line number="45" hits="36" branch="False" />
+            <line number="38" hits="8" branch="False" />
+            <line number="39" hits="8" branch="False" />
+            <line number="40" hits="8" branch="False" />
+            <line number="43" hits="45" branch="False" />
+            <line number="44" hits="45" branch="False" />
+            <line number="45" hits="45" branch="False" />
             <line number="48" hits="8" branch="False" />
             <line number="49" hits="8" branch="False" />
             <line number="50" hits="8" branch="False" />
@@ -272,18 +272,18 @@
             <line number="68" hits="6" branch="False" />
             <line number="69" hits="6" branch="False" />
             <line number="70" hits="6" branch="False" />
-            <line number="73" hits="47" branch="False" />
-            <line number="74" hits="47" branch="False" />
-            <line number="75" hits="47" branch="False" />
-            <line number="76" hits="47" branch="False" />
-            <line number="23" hits="53" branch="False" />
-            <line number="24" hits="53" branch="False" />
-            <line number="25" hits="53" branch="False" />
-            <line number="26" hits="53" branch="False" />
-            <line number="27" hits="53" branch="False" />
-            <line number="28" hits="53" branch="False" />
-            <line number="29" hits="53" branch="False" />
-            <line number="30" hits="53" branch="False" />
+            <line number="73" hits="59" branch="False" />
+            <line number="74" hits="59" branch="False" />
+            <line number="75" hits="59" branch="False" />
+            <line number="76" hits="59" branch="False" />
+            <line number="23" hits="64" branch="False" />
+            <line number="24" hits="64" branch="False" />
+            <line number="25" hits="64" branch="False" />
+            <line number="26" hits="64" branch="False" />
+            <line number="27" hits="64" branch="False" />
+            <line number="28" hits="64" branch="False" />
+            <line number="29" hits="64" branch="False" />
+            <line number="30" hits="64" branch="False" />
             <line number="32" hits="3" branch="False" />
             <line number="33" hits="3" branch="False" />
             <line number="34" hits="3" branch="False" />
@@ -294,7 +294,7 @@
           <methods>
             <method name="TipoAveEhValida" signature="(UaiGranja.Avicultura.Domain.Entities.TipoAve)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="93" hits="47" branch="True" condition-coverage="100% (2/2)">
+                <line number="93" hits="59" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="1" type="jump" coverage="100%" />
                   </conditions>
@@ -303,209 +303,228 @@
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="81" hits="47" branch="False" />
-                <line number="82" hits="47" branch="False" />
-                <line number="83" hits="47" branch="False" />
-                <line number="85" hits="47" branch="False" />
-                <line number="87" hits="47" branch="False" />
-                <line number="89" hits="47" branch="False" />
-                <line number="90" hits="47" branch="False" />
+                <line number="81" hits="59" branch="False" />
+                <line number="82" hits="59" branch="False" />
+                <line number="83" hits="59" branch="False" />
+                <line number="85" hits="59" branch="False" />
+                <line number="87" hits="59" branch="False" />
+                <line number="89" hits="59" branch="False" />
+                <line number="90" hits="59" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="93" hits="47" branch="True" condition-coverage="100% (2/2)">
+            <line number="93" hits="59" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="1" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="81" hits="47" branch="False" />
-            <line number="82" hits="47" branch="False" />
-            <line number="83" hits="47" branch="False" />
-            <line number="85" hits="47" branch="False" />
-            <line number="87" hits="47" branch="False" />
-            <line number="89" hits="47" branch="False" />
-            <line number="90" hits="47" branch="False" />
+            <line number="81" hits="59" branch="False" />
+            <line number="82" hits="59" branch="False" />
+            <line number="83" hits="59" branch="False" />
+            <line number="85" hits="59" branch="False" />
+            <line number="87" hits="59" branch="False" />
+            <line number="89" hits="59" branch="False" />
+            <line number="90" hits="59" branch="False" />
           </lines>
         </class>
-        <class name="UaiGranja.Avicultura.Domain.Entities.Galinheiro" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\Galinheiro.cs" line-rate="0.5675" branch-rate="0.5333" complexity="39">
+        <class name="UaiGranja.Avicultura.Domain.Entities.Galinheiro" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\Galinheiro.cs" line-rate="1" branch-rate="0.9687" complexity="42">
           <methods>
             <method name="get_Codigo" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="8" branch="False" />
+                <line number="8" hits="20" branch="False" />
               </lines>
             </method>
             <method name="get_Area" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="8" branch="False" />
+                <line number="9" hits="20" branch="False" />
               </lines>
             </method>
             <method name="get_Capacidade" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="17" branch="False" />
+                <line number="10" hits="39" branch="False" />
               </lines>
             </method>
             <method name="get_UtilizaLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="18" branch="False" />
+                <line number="11" hits="56" branch="False" />
               </lines>
             </method>
             <method name="get_Aves" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="2" branch="False" />
+                <line number="16" hits="4" branch="False" />
               </lines>
             </method>
             <method name="get_Lotes" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="1" branch="False" />
+                <line number="19" hits="6" branch="False" />
               </lines>
             </method>
             <method name="AdicionarLote" signature="(UaiGranja.Avicultura.Domain.Entities.Lote)" line-rate="1" branch-rate="1" complexity="6">
               <lines>
-                <line number="38" hits="3" branch="False" />
-                <line number="39" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="38" hits="9" branch="False" />
+                <line number="39" hits="9" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="12" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="41" hits="4" branch="True" condition-coverage="100% (2/2)">
+                <line number="41" hits="10" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="27" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="43" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="43" hits="9" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="64" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="45" hits="1" branch="False" />
-                <line number="46" hits="1" branch="False" />
-                <line number="47" hits="1" branch="False" />
+                <line number="45" hits="7" branch="False" />
+                <line number="46" hits="7" branch="False" />
+                <line number="47" hits="7" branch="False" />
               </lines>
             </method>
-            <method name="AdicionarAves" signature="(System.Collections.Generic.IEnumerable`1&lt;UaiGranja.Avicultura.Domain.Entities.Ave&gt;,System.Guid)" line-rate="0" branch-rate="0" complexity="2">
+            <method name="AdicionarAves" signature="(System.Collections.Generic.IEnumerable`1&lt;UaiGranja.Avicultura.Domain.Entities.Ave&gt;,System.Guid)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="50" hits="0" branch="False" />
-                <line number="51" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="50" hits="2" branch="False" />
+                <line number="51" hits="14" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="35" type="jump" coverage="0%" />
+                    <condition number="35" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="52" hits="0" branch="False" />
-                <line number="53" hits="0" branch="False" />
-                <line number="54" hits="0" branch="False" />
-                <line number="55" hits="0" branch="False" />
+                <line number="52" hits="4" branch="False" />
+                <line number="53" hits="4" branch="False" />
+                <line number="54" hits="4" branch="False" />
+                <line number="55" hits="2" branch="False" />
               </lines>
             </method>
-            <method name="AdicionarAve" signature="(UaiGranja.Avicultura.Domain.Entities.Ave,System.Guid)" line-rate="0.625" branch-rate="0.5714" complexity="14">
+            <method name="AdicionarAve" signature="(UaiGranja.Avicultura.Domain.Entities.Ave,System.Guid)" line-rate="1" branch-rate="0.9285" complexity="14">
               <lines>
-                <line number="58" hits="7" branch="False" />
-                <line number="59" hits="7" branch="True" condition-coverage="100% (2/2)">
+                <line number="58" hits="14" branch="False" />
+                <line number="59" hits="14" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="37" type="jump" coverage="100%" />
+                    <condition number="29" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="61" hits="7" branch="True" condition-coverage="50% (1/2)">
+                <line number="60" hits="4" branch="False" />
+                <line number="61" hits="8" branch="False" />
+                <line number="62" hits="5" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="52" type="jump" coverage="50%" />
+                    <condition number="62" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="62" hits="0" branch="False" />
-                <line number="63" hits="0" branch="False" />
-                <line number="64" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="63" hits="4" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="87" type="jump" coverage="0%" />
+                    <condition number="101" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="65" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="65" hits="2" branch="False" />
+                <line number="66" hits="1" branch="False" />
+                <line number="68" hits="10" branch="False" />
+                <line number="69" hits="10" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
-                    <condition number="126" type="jump" coverage="0%" />
+                    <condition number="152" type="jump" coverage="50%" />
                   </conditions>
                 </line>
-                <line number="67" hits="0" branch="False" />
-                <line number="68" hits="0" branch="False" />
-                <line number="70" hits="7" branch="False" />
-                <line number="71" hits="9" branch="True" condition-coverage="100% (2/2)">
+                <line number="70" hits="11" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="182" type="jump" coverage="100%" />
+                    <condition number="207" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="72" hits="8" branch="True" condition-coverage="75% (3/4)">
+                <line number="71" hits="14" branch="True" condition-coverage="100% (4/4)">
                   <conditions>
-                    <condition number="222" type="jump" coverage="100%" />
-                    <condition number="22" type="jump" coverage="50%" />
+                    <condition number="247" type="jump" coverage="100%" />
+                    <condition number="22" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="73" hits="4" branch="False" />
-                <line number="74" hits="4" branch="False" />
-                <line number="75" hits="4" branch="False" />
-                <line number="76" hits="4" branch="False" />
+                <line number="72" hits="8" branch="False" />
+                <line number="73" hits="8" branch="False" />
+                <line number="74" hits="8" branch="False" />
+                <line number="75" hits="9" branch="False" />
               </lines>
             </method>
-            <method name="RealizarAbateAve" signature="(System.Guid,System.Decimal)" line-rate="1" branch-rate="1" complexity="2">
+            <method name="RealizarAbateAve" signature="(System.Guid,System.Decimal)" line-rate="1" branch-rate="1" complexity="4">
               <lines>
-                <line number="79" hits="2" branch="False" />
+                <line number="78" hits="3" branch="False" />
+                <line number="79" hits="4" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="22" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
                 <line number="80" hits="3" branch="False" />
                 <line number="81" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="44" type="jump" coverage="100%" />
+                    <condition number="65" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="82" hits="1" branch="False" />
                 <line number="83" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="AlterarEstruturaGalinheiro" signature="()" line-rate="0" branch-rate="0" complexity="6">
+            <method name="RealizarAbateLote" signature="(System.Guid,System.Decimal)" line-rate="1" branch-rate="1" complexity="4">
               <lines>
-                <line number="86" hits="0" branch="False" />
-                <line number="87" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="86" hits="3" branch="False" />
+                <line number="87" hits="4" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="9" type="jump" coverage="0%" />
+                    <condition number="25" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="88" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="88" hits="3" branch="False" />
+                <line number="89" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="147" type="jump" coverage="0%" />
+                    <condition number="68" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="89" hits="0" branch="False" />
-                <line number="90" hits="0" branch="False" />
-                <line number="91" hits="0" branch="False" />
-                <line number="92" hits="0" branch="False" />
-                <line number="94" hits="0" branch="True" condition-coverage="0% (0/2)">
-                  <conditions>
-                    <condition number="179" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="95" hits="0" branch="False" />
-                <line number="96" hits="0" branch="False" />
-                <line number="97" hits="0" branch="False" />
-                <line number="98" hits="0" branch="False" />
-                <line number="99" hits="0" branch="False" />
-                <line number="100" hits="0" branch="False" />
-                <line number="102" hits="0" branch="False" />
-                <line number="103" hits="0" branch="False" />
+                <line number="90" hits="1" branch="False" />
+                <line number="91" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="EhValido" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="AlterarEstruturaGalinheiro" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="106" hits="0" branch="False" />
-                <line number="107" hits="0" branch="False" />
-                <line number="108" hits="0" branch="False" />
-                <line number="109" hits="0" branch="False" />
+                <line number="94" hits="2" branch="False" />
+                <line number="95" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="96" hits="1" branch="False" />
+                <line number="97" hits="1" branch="False" />
+                <line number="98" hits="2" branch="False" />
+                <line number="99" hits="2" branch="False" />
+                <line number="100" hits="1" branch="False" />
+                <line number="102" hits="1" branch="False" />
+                <line number="103" hits="1" branch="False" />
+                <line number="104" hits="1" branch="False" />
+                <line number="105" hits="1" branch="False" />
+                <line number="106" hits="1" branch="False" />
+                <line number="107" hits="3" branch="False" />
+                <line number="108" hits="1" branch="False" />
+                <line number="109" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="AtualizarGalinheiroUtilizaLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="112" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="EhValido" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="115" hits="2" branch="False" />
+                <line number="116" hits="2" branch="False" />
+                <line number="117" hits="2" branch="False" />
+                <line number="118" hits="2" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String,System.Decimal,System.Int32,System.Boolean)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="8" branch="False" />
-                <line number="22" hits="8" branch="False" />
-                <line number="23" hits="8" branch="False" />
-                <line number="24" hits="8" branch="False" />
-                <line number="25" hits="8" branch="False" />
-                <line number="26" hits="8" branch="False" />
-                <line number="27" hits="8" branch="False" />
-                <line number="28" hits="8" branch="False" />
-                <line number="29" hits="8" branch="False" />
+                <line number="21" hits="18" branch="False" />
+                <line number="22" hits="18" branch="False" />
+                <line number="23" hits="18" branch="False" />
+                <line number="24" hits="18" branch="False" />
+                <line number="25" hits="18" branch="False" />
+                <line number="26" hits="18" branch="False" />
+                <line number="27" hits="18" branch="False" />
+                <line number="28" hits="18" branch="False" />
+                <line number="29" hits="18" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -519,132 +538,143 @@
             </method>
           </methods>
           <lines>
-            <line number="8" hits="8" branch="False" />
-            <line number="9" hits="8" branch="False" />
-            <line number="10" hits="17" branch="False" />
-            <line number="11" hits="18" branch="False" />
-            <line number="16" hits="2" branch="False" />
-            <line number="19" hits="1" branch="False" />
-            <line number="38" hits="3" branch="False" />
-            <line number="39" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="8" hits="20" branch="False" />
+            <line number="9" hits="20" branch="False" />
+            <line number="10" hits="39" branch="False" />
+            <line number="11" hits="56" branch="False" />
+            <line number="16" hits="4" branch="False" />
+            <line number="19" hits="6" branch="False" />
+            <line number="38" hits="9" branch="False" />
+            <line number="39" hits="9" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="12" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="41" hits="4" branch="True" condition-coverage="100% (2/2)">
+            <line number="41" hits="10" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="27" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="43" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="43" hits="9" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="64" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="45" hits="1" branch="False" />
-            <line number="46" hits="1" branch="False" />
-            <line number="47" hits="1" branch="False" />
-            <line number="50" hits="0" branch="False" />
-            <line number="51" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="45" hits="7" branch="False" />
+            <line number="46" hits="7" branch="False" />
+            <line number="47" hits="7" branch="False" />
+            <line number="50" hits="2" branch="False" />
+            <line number="51" hits="14" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="35" type="jump" coverage="0%" />
+                <condition number="35" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="52" hits="0" branch="False" />
-            <line number="53" hits="0" branch="False" />
-            <line number="54" hits="0" branch="False" />
-            <line number="55" hits="0" branch="False" />
-            <line number="58" hits="7" branch="False" />
-            <line number="59" hits="7" branch="True" condition-coverage="100% (2/2)">
+            <line number="52" hits="4" branch="False" />
+            <line number="53" hits="4" branch="False" />
+            <line number="54" hits="4" branch="False" />
+            <line number="55" hits="2" branch="False" />
+            <line number="58" hits="14" branch="False" />
+            <line number="59" hits="14" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="37" type="jump" coverage="100%" />
+                <condition number="29" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="61" hits="7" branch="True" condition-coverage="50% (1/2)">
+            <line number="60" hits="4" branch="False" />
+            <line number="61" hits="8" branch="False" />
+            <line number="62" hits="5" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="52" type="jump" coverage="50%" />
+                <condition number="62" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="62" hits="0" branch="False" />
-            <line number="63" hits="0" branch="False" />
-            <line number="64" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="63" hits="4" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="87" type="jump" coverage="0%" />
+                <condition number="101" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="65" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="65" hits="2" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="68" hits="10" branch="False" />
+            <line number="69" hits="10" branch="True" condition-coverage="50% (1/2)">
               <conditions>
-                <condition number="126" type="jump" coverage="0%" />
+                <condition number="152" type="jump" coverage="50%" />
               </conditions>
             </line>
-            <line number="67" hits="0" branch="False" />
-            <line number="68" hits="0" branch="False" />
-            <line number="70" hits="7" branch="False" />
-            <line number="71" hits="9" branch="True" condition-coverage="100% (2/2)">
+            <line number="70" hits="11" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="182" type="jump" coverage="100%" />
+                <condition number="207" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="72" hits="8" branch="True" condition-coverage="75% (3/4)">
+            <line number="71" hits="14" branch="True" condition-coverage="100% (4/4)">
               <conditions>
-                <condition number="222" type="jump" coverage="100%" />
-                <condition number="22" type="jump" coverage="50%" />
+                <condition number="247" type="jump" coverage="100%" />
+                <condition number="22" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="73" hits="4" branch="False" />
-            <line number="74" hits="4" branch="False" />
-            <line number="75" hits="4" branch="False" />
-            <line number="76" hits="4" branch="False" />
-            <line number="79" hits="2" branch="False" />
+            <line number="72" hits="8" branch="False" />
+            <line number="73" hits="8" branch="False" />
+            <line number="74" hits="8" branch="False" />
+            <line number="75" hits="9" branch="False" />
+            <line number="78" hits="3" branch="False" />
+            <line number="79" hits="4" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="22" type="jump" coverage="100%" />
+              </conditions>
+            </line>
             <line number="80" hits="3" branch="False" />
             <line number="81" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="44" type="jump" coverage="100%" />
+                <condition number="65" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="82" hits="1" branch="False" />
             <line number="83" hits="1" branch="False" />
-            <line number="86" hits="0" branch="False" />
-            <line number="87" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="86" hits="3" branch="False" />
+            <line number="87" hits="4" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="9" type="jump" coverage="0%" />
+                <condition number="25" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="88" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="88" hits="3" branch="False" />
+            <line number="89" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="147" type="jump" coverage="0%" />
+                <condition number="68" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="89" hits="0" branch="False" />
-            <line number="90" hits="0" branch="False" />
-            <line number="91" hits="0" branch="False" />
-            <line number="92" hits="0" branch="False" />
-            <line number="94" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="90" hits="1" branch="False" />
+            <line number="91" hits="1" branch="False" />
+            <line number="94" hits="2" branch="False" />
+            <line number="95" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="179" type="jump" coverage="0%" />
+                <condition number="9" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="95" hits="0" branch="False" />
-            <line number="96" hits="0" branch="False" />
-            <line number="97" hits="0" branch="False" />
-            <line number="98" hits="0" branch="False" />
-            <line number="99" hits="0" branch="False" />
-            <line number="100" hits="0" branch="False" />
-            <line number="102" hits="0" branch="False" />
-            <line number="103" hits="0" branch="False" />
-            <line number="106" hits="0" branch="False" />
-            <line number="107" hits="0" branch="False" />
-            <line number="108" hits="0" branch="False" />
-            <line number="109" hits="0" branch="False" />
-            <line number="21" hits="8" branch="False" />
-            <line number="22" hits="8" branch="False" />
-            <line number="23" hits="8" branch="False" />
-            <line number="24" hits="8" branch="False" />
-            <line number="25" hits="8" branch="False" />
-            <line number="26" hits="8" branch="False" />
-            <line number="27" hits="8" branch="False" />
-            <line number="28" hits="8" branch="False" />
-            <line number="29" hits="8" branch="False" />
+            <line number="96" hits="1" branch="False" />
+            <line number="97" hits="1" branch="False" />
+            <line number="98" hits="2" branch="False" />
+            <line number="99" hits="2" branch="False" />
+            <line number="100" hits="1" branch="False" />
+            <line number="102" hits="1" branch="False" />
+            <line number="103" hits="1" branch="False" />
+            <line number="104" hits="1" branch="False" />
+            <line number="105" hits="1" branch="False" />
+            <line number="106" hits="1" branch="False" />
+            <line number="107" hits="3" branch="False" />
+            <line number="108" hits="1" branch="False" />
+            <line number="109" hits="2" branch="False" />
+            <line number="112" hits="2" branch="False" />
+            <line number="115" hits="2" branch="False" />
+            <line number="116" hits="2" branch="False" />
+            <line number="117" hits="2" branch="False" />
+            <line number="118" hits="2" branch="False" />
+            <line number="21" hits="18" branch="False" />
+            <line number="22" hits="18" branch="False" />
+            <line number="23" hits="18" branch="False" />
+            <line number="24" hits="18" branch="False" />
+            <line number="25" hits="18" branch="False" />
+            <line number="26" hits="18" branch="False" />
+            <line number="27" hits="18" branch="False" />
+            <line number="28" hits="18" branch="False" />
+            <line number="29" hits="18" branch="False" />
             <line number="31" hits="1" branch="False" />
             <line number="32" hits="1" branch="False" />
             <line number="33" hits="1" branch="False" />
@@ -652,57 +682,57 @@
             <line number="35" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="UaiGranja.Avicultura.Domain.Entities.GalinheiroValidation" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\Galinheiro.cs" line-rate="0" branch-rate="0" complexity="3">
+        <class name="UaiGranja.Avicultura.Domain.Entities.GalinheiroValidation" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\Galinheiro.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
-            <method name="CapacidadeValida" signature="(UaiGranja.Avicultura.Domain.Entities.Galinheiro)" line-rate="0" branch-rate="0" complexity="2">
+            <method name="CapacidadeValida" signature="(UaiGranja.Avicultura.Domain.Entities.Galinheiro)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="124" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="133" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="7" type="jump" coverage="0%" />
+                    <condition number="7" type="jump" coverage="100%" />
                   </conditions>
                 </line>
               </lines>
             </method>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="114" hits="0" branch="False" />
-                <line number="115" hits="0" branch="False" />
-                <line number="116" hits="0" branch="False" />
-                <line number="118" hits="0" branch="False" />
-                <line number="120" hits="0" branch="False" />
-                <line number="121" hits="0" branch="False" />
+                <line number="123" hits="2" branch="False" />
+                <line number="124" hits="2" branch="False" />
+                <line number="125" hits="2" branch="False" />
+                <line number="127" hits="2" branch="False" />
+                <line number="129" hits="2" branch="False" />
+                <line number="130" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="124" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="133" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="7" type="jump" coverage="0%" />
+                <condition number="7" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="114" hits="0" branch="False" />
-            <line number="115" hits="0" branch="False" />
-            <line number="116" hits="0" branch="False" />
-            <line number="118" hits="0" branch="False" />
-            <line number="120" hits="0" branch="False" />
-            <line number="121" hits="0" branch="False" />
+            <line number="123" hits="2" branch="False" />
+            <line number="124" hits="2" branch="False" />
+            <line number="125" hits="2" branch="False" />
+            <line number="127" hits="2" branch="False" />
+            <line number="129" hits="2" branch="False" />
+            <line number="130" hits="2" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Avicultura.Domain.Entities.HistoricoAve" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\HistoricoAve.cs" line-rate="0.8461" branch-rate="1" complexity="7">
           <methods>
             <method name="get_Pesagem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="41" branch="False" />
+                <line number="11" hits="38" branch="False" />
               </lines>
             </method>
             <method name="get_AveId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="31" branch="False" />
+                <line number="12" hits="32" branch="False" />
               </lines>
             </method>
             <method name="get_LoteId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="21" branch="False" />
+                <line number="13" hits="24" branch="False" />
               </lines>
             </method>
             <method name="get_Ave" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -717,35 +747,35 @@
             </method>
             <method name="EhValido" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="15" branch="False" />
-                <line number="23" hits="15" branch="False" />
-                <line number="24" hits="15" branch="False" />
-                <line number="26" hits="15" branch="False" />
-                <line number="27" hits="15" branch="False" />
-                <line number="29" hits="15" branch="False" />
-                <line number="30" hits="15" branch="False" />
+                <line number="22" hits="16" branch="False" />
+                <line number="23" hits="16" branch="False" />
+                <line number="24" hits="16" branch="False" />
+                <line number="26" hits="16" branch="False" />
+                <line number="27" hits="16" branch="False" />
+                <line number="29" hits="16" branch="False" />
+                <line number="30" hits="16" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="45" branch="False" />
+                <line number="19" hits="48" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="41" branch="False" />
-            <line number="12" hits="31" branch="False" />
-            <line number="13" hits="21" branch="False" />
+            <line number="11" hits="38" branch="False" />
+            <line number="12" hits="32" branch="False" />
+            <line number="13" hits="24" branch="False" />
             <line number="16" hits="0" branch="False" />
             <line number="17" hits="0" branch="False" />
-            <line number="22" hits="15" branch="False" />
-            <line number="23" hits="15" branch="False" />
-            <line number="24" hits="15" branch="False" />
-            <line number="26" hits="15" branch="False" />
-            <line number="27" hits="15" branch="False" />
-            <line number="29" hits="15" branch="False" />
-            <line number="30" hits="15" branch="False" />
-            <line number="19" hits="45" branch="False" />
+            <line number="22" hits="16" branch="False" />
+            <line number="23" hits="16" branch="False" />
+            <line number="24" hits="16" branch="False" />
+            <line number="26" hits="16" branch="False" />
+            <line number="27" hits="16" branch="False" />
+            <line number="29" hits="16" branch="False" />
+            <line number="30" hits="16" branch="False" />
+            <line number="19" hits="48" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Avicultura.Domain.Entities.HistoricoAve/HistoricoAveFactory" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\HistoricoAve.cs" line-rate="1" branch-rate="1" complexity="12">
@@ -774,24 +804,24 @@
             </method>
             <method name="NovaPesagemLote" signature="(UaiGranja.Avicultura.Domain.Entities.Lote,UaiGranja.Avicultura.Domain.Enums.TipoHistoricoPesagemEnum,UaiGranja.Avicultura.Domain.Enums.TipoPesagemEnum,System.Decimal)" line-rate="1" branch-rate="1" complexity="6">
               <lines>
-                <line number="48" hits="8" branch="False" />
-                <line number="49" hits="9" branch="True" condition-coverage="100% (4/4)">
+                <line number="48" hits="9" branch="False" />
+                <line number="49" hits="10" branch="True" condition-coverage="100% (4/4)">
                   <conditions>
                     <condition number="2" type="jump" coverage="100%" />
                     <condition number="25" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="51" hits="7" branch="False" />
-                <line number="52" hits="7" branch="False" />
-                <line number="53" hits="7" branch="False" />
-                <line number="54" hits="7" branch="False" />
-                <line number="55" hits="7" branch="False" />
-                <line number="57" hits="7" branch="True" condition-coverage="100% (2/2)">
+                <line number="51" hits="8" branch="False" />
+                <line number="52" hits="8" branch="False" />
+                <line number="53" hits="8" branch="False" />
+                <line number="54" hits="8" branch="False" />
+                <line number="55" hits="8" branch="False" />
+                <line number="57" hits="8" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="89" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="58" hits="6" branch="False" />
+                <line number="58" hits="7" branch="False" />
               </lines>
             </method>
           </methods>
@@ -814,103 +844,108 @@
               </conditions>
             </line>
             <line number="45" hits="7" branch="False" />
-            <line number="48" hits="8" branch="False" />
-            <line number="49" hits="9" branch="True" condition-coverage="100% (4/4)">
+            <line number="48" hits="9" branch="False" />
+            <line number="49" hits="10" branch="True" condition-coverage="100% (4/4)">
               <conditions>
                 <condition number="2" type="jump" coverage="100%" />
                 <condition number="25" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="51" hits="7" branch="False" />
-            <line number="52" hits="7" branch="False" />
-            <line number="53" hits="7" branch="False" />
-            <line number="54" hits="7" branch="False" />
-            <line number="55" hits="7" branch="False" />
-            <line number="57" hits="7" branch="True" condition-coverage="100% (2/2)">
+            <line number="51" hits="8" branch="False" />
+            <line number="52" hits="8" branch="False" />
+            <line number="53" hits="8" branch="False" />
+            <line number="54" hits="8" branch="False" />
+            <line number="55" hits="8" branch="False" />
+            <line number="57" hits="8" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="89" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="58" hits="6" branch="False" />
+            <line number="58" hits="7" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Avicultura.Domain.Entities.HistoricoAve/HistoricoAveValidation" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\HistoricoAve.cs" line-rate="1" branch-rate="0.8332999999999999" complexity="7">
           <methods>
             <method name="HistoricoEstaAssociado" signature="(UaiGranja.Avicultura.Domain.Entities.HistoricoAve)" line-rate="1" branch-rate="0.8332999999999999" complexity="6">
               <lines>
-                <line number="69" hits="15" branch="False" />
-                <line number="70" hits="15" branch="True" condition-coverage="83.33% (5/6)">
+                <line number="69" hits="16" branch="False" />
+                <line number="70" hits="16" branch="True" condition-coverage="83.33% (5/6)">
                   <conditions>
                     <condition number="15" type="jump" coverage="100%" />
                     <condition number="41" type="jump" coverage="100%" />
                     <condition number="57" type="jump" coverage="50%" />
                   </conditions>
                 </line>
-                <line number="71" hits="15" branch="False" />
-                <line number="72" hits="15" branch="False" />
+                <line number="71" hits="16" branch="False" />
+                <line number="72" hits="16" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="63" hits="15" branch="False" />
-                <line number="64" hits="15" branch="False" />
-                <line number="65" hits="15" branch="False" />
-                <line number="66" hits="15" branch="False" />
+                <line number="63" hits="16" branch="False" />
+                <line number="64" hits="16" branch="False" />
+                <line number="65" hits="16" branch="False" />
+                <line number="66" hits="16" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="69" hits="15" branch="False" />
-            <line number="70" hits="15" branch="True" condition-coverage="83.33% (5/6)">
+            <line number="69" hits="16" branch="False" />
+            <line number="70" hits="16" branch="True" condition-coverage="83.33% (5/6)">
               <conditions>
                 <condition number="15" type="jump" coverage="100%" />
                 <condition number="41" type="jump" coverage="100%" />
                 <condition number="57" type="jump" coverage="50%" />
               </conditions>
             </line>
-            <line number="71" hits="15" branch="False" />
-            <line number="72" hits="15" branch="False" />
-            <line number="63" hits="15" branch="False" />
-            <line number="64" hits="15" branch="False" />
-            <line number="65" hits="15" branch="False" />
-            <line number="66" hits="15" branch="False" />
+            <line number="71" hits="16" branch="False" />
+            <line number="72" hits="16" branch="False" />
+            <line number="63" hits="16" branch="False" />
+            <line number="64" hits="16" branch="False" />
+            <line number="65" hits="16" branch="False" />
+            <line number="66" hits="16" branch="False" />
           </lines>
         </class>
-        <class name="UaiGranja.Avicultura.Domain.Entities.Lote" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\Lote.cs" line-rate="0.985" branch-rate="1" complexity="33">
+        <class name="UaiGranja.Avicultura.Domain.Entities.Lote" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\Lote.cs" line-rate="0.9856999999999999" branch-rate="1" complexity="37">
           <methods>
             <method name="get_Codigo" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="33" branch="False" />
+                <line number="9" hits="39" branch="False" />
               </lines>
             </method>
             <method name="get_Capacidade" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="71" branch="False" />
+                <line number="10" hits="95" branch="False" />
               </lines>
             </method>
             <method name="get_GalinheiroId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="1" branch="False" />
+                <line number="11" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Finalizado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="67" branch="False" />
               </lines>
             </method>
             <method name="get_Galinheiro" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
               </lines>
             </method>
             <method name="get_Aves" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="24" branch="False" />
+                <line number="17" hits="33" branch="False" />
               </lines>
             </method>
             <method name="get_Historicos" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="14" branch="False" />
+                <line number="19" hits="1" branch="False" />
               </lines>
             </method>
             <method name="get_DataNascimento" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="19" hits="13" branch="True" condition-coverage="100% (2/2)">
+                <line number="20" hits="15" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="12" type="jump" coverage="100%" />
                   </conditions>
@@ -919,320 +954,341 @@
             </method>
             <method name="AssociarGalinheiro" signature="(System.Guid)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="36" hits="1" branch="False" />
-                <line number="37" hits="1" branch="False" />
-                <line number="38" hits="1" branch="False" />
+                <line number="37" hits="7" branch="False" />
+                <line number="38" hits="7" branch="False" />
+                <line number="39" hits="7" branch="False" />
               </lines>
             </method>
             <method name="GerarCodigoLotePadrao" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="41" hits="3" branch="False" />
-                <line number="42" hits="3" branch="False" />
-                <line number="43" hits="3" branch="False" />
-                <line number="44" hits="3" branch="False" />
+                <line number="42" hits="4" branch="False" />
+                <line number="43" hits="4" branch="False" />
+                <line number="44" hits="4" branch="False" />
+                <line number="45" hits="4" branch="False" />
               </lines>
             </method>
             <method name="AdicionarAves" signature="(System.Collections.Generic.IEnumerable`1&lt;UaiGranja.Avicultura.Domain.Entities.Ave&gt;)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="47" hits="18" branch="False" />
-                <line number="48" hits="126" branch="True" condition-coverage="100% (2/2)">
+                <line number="48" hits="22" branch="False" />
+                <line number="49" hits="154" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="34" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="49" hits="36" branch="False" />
-                <line number="50" hits="36" branch="False" />
-                <line number="51" hits="36" branch="False" />
-                <line number="52" hits="18" branch="False" />
+                <line number="50" hits="44" branch="False" />
+                <line number="51" hits="44" branch="False" />
+                <line number="52" hits="44" branch="False" />
+                <line number="53" hits="22" branch="False" />
               </lines>
             </method>
-            <method name="AdicionarAve" signature="(UaiGranja.Avicultura.Domain.Entities.Ave)" line-rate="1" branch-rate="1" complexity="4">
+            <method name="AdicionarAve" signature="(UaiGranja.Avicultura.Domain.Entities.Ave)" line-rate="1" branch-rate="1" complexity="6">
               <lines>
-                <line number="55" hits="38" branch="False" />
-                <line number="56" hits="39" branch="True" condition-coverage="100% (2/2)">
+                <line number="56" hits="48" branch="False" />
+                <line number="57" hits="49" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="12" type="jump" coverage="100%" />
+                    <condition number="9" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="57" hits="38" branch="True" condition-coverage="100% (2/2)">
+                <line number="58" hits="48" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="60" type="jump" coverage="100%" />
+                    <condition number="33" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="59" hits="36" branch="False" />
-                <line number="60" hits="36" branch="False" />
-                <line number="61" hits="36" branch="False" />
+                <line number="59" hits="47" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="81" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="61" hits="45" branch="False" />
+                <line number="62" hits="45" branch="False" />
+                <line number="63" hits="45" branch="False" />
               </lines>
             </method>
             <method name="ObterIdadeLote" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="64" hits="7" branch="False" />
-                <line number="65" hits="8" branch="True" condition-coverage="100% (2/2)">
+                <line number="66" hits="8" branch="False" />
+                <line number="67" hits="9" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="20" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="66" hits="6" branch="False" />
-                <line number="67" hits="7" branch="False" />
+                <line number="68" hits="7" branch="False" />
+                <line number="69" hits="8" branch="False" />
               </lines>
             </method>
-            <method name="EstaVivo" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="EstaVivo" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="70" hits="13" branch="False" />
-                <line number="71" hits="18" branch="False" />
-                <line number="72" hits="13" branch="False" />
+                <line number="72" hits="14" branch="False" />
+                <line number="73" hits="14" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="13" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="74" hits="14" branch="False" />
               </lines>
             </method>
             <method name="RealizarPesagem" signature="(System.Decimal)" line-rate="1" branch-rate="1" complexity="4">
               <lines>
-                <line number="75" hits="3" branch="False" />
-                <line number="76" hits="4" branch="True" condition-coverage="100% (2/2)">
+                <line number="77" hits="3" branch="False" />
+                <line number="78" hits="4" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="17" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="77" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="79" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="41" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="78" hits="1" branch="False" />
-                <line number="79" hits="1" branch="False" />
                 <line number="80" hits="1" branch="False" />
+                <line number="81" hits="1" branch="False" />
+                <line number="82" hits="1" branch="False" />
               </lines>
             </method>
             <method name="RealizarAbate" signature="(System.Decimal)" line-rate="1" branch-rate="1" complexity="4">
               <lines>
-                <line number="83" hits="7" branch="False" />
-                <line number="84" hits="8" branch="True" condition-coverage="100% (2/2)">
+                <line number="85" hits="8" branch="False" />
+                <line number="86" hits="9" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="17" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="85" hits="7" branch="True" condition-coverage="100% (2/2)">
+                <line number="87" hits="8" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="41" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="86" hits="5" branch="False" />
-                <line number="87" hits="5" branch="False" />
-                <line number="88" hits="5" branch="False" />
+                <line number="88" hits="6" branch="False" />
+                <line number="89" hits="6" branch="False" />
+                <line number="90" hits="6" branch="False" />
+                <line number="91" hits="6" branch="False" />
               </lines>
             </method>
             <method name="AlterarCodigo" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="91" hits="3" branch="False" />
-                <line number="92" hits="3" branch="False" />
-                <line number="93" hits="3" branch="False" />
+                <line number="94" hits="3" branch="False" />
+                <line number="95" hits="3" branch="False" />
+                <line number="96" hits="3" branch="False" />
               </lines>
             </method>
             <method name="AlterarCapacidade" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="96" hits="2" branch="False" />
-                <line number="97" hits="2" branch="False" />
-                <line number="98" hits="2" branch="False" />
+                <line number="99" hits="2" branch="False" />
+                <line number="100" hits="2" branch="False" />
+                <line number="101" hits="2" branch="False" />
               </lines>
             </method>
             <method name="EhValido" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="101" hits="5" branch="False" />
-                <line number="102" hits="5" branch="False" />
-                <line number="103" hits="5" branch="False" />
-                <line number="104" hits="5" branch="False" />
+                <line number="104" hits="11" branch="False" />
+                <line number="105" hits="11" branch="False" />
+                <line number="106" hits="11" branch="False" />
+                <line number="107" hits="11" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String,System.Int32)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="21" hits="21" branch="False" />
-                <line number="22" hits="21" branch="False" />
-                <line number="23" hits="21" branch="False" />
-                <line number="24" hits="21" branch="True" condition-coverage="100% (2/2)">
+                <line number="22" hits="27" branch="False" />
+                <line number="23" hits="27" branch="False" />
+                <line number="24" hits="27" branch="False" />
+                <line number="25" hits="27" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="23" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="25" hits="21" branch="False" />
-                <line number="26" hits="21" branch="False" />
-                <line number="27" hits="21" branch="False" />
+                <line number="26" hits="27" branch="False" />
+                <line number="27" hits="27" branch="False" />
+                <line number="28" hits="27" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="29" hits="2" branch="False" />
                 <line number="30" hits="2" branch="False" />
                 <line number="31" hits="2" branch="False" />
                 <line number="32" hits="2" branch="False" />
                 <line number="33" hits="2" branch="False" />
+                <line number="34" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="33" branch="False" />
-            <line number="10" hits="71" branch="False" />
-            <line number="11" hits="1" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="16" hits="24" branch="False" />
-            <line number="18" hits="14" branch="False" />
-            <line number="19" hits="13" branch="True" condition-coverage="100% (2/2)">
+            <line number="9" hits="39" branch="False" />
+            <line number="10" hits="95" branch="False" />
+            <line number="11" hits="7" branch="False" />
+            <line number="12" hits="67" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="17" hits="33" branch="False" />
+            <line number="19" hits="1" branch="False" />
+            <line number="20" hits="15" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="12" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="36" hits="1" branch="False" />
-            <line number="37" hits="1" branch="False" />
-            <line number="38" hits="1" branch="False" />
-            <line number="41" hits="3" branch="False" />
-            <line number="42" hits="3" branch="False" />
-            <line number="43" hits="3" branch="False" />
-            <line number="44" hits="3" branch="False" />
-            <line number="47" hits="18" branch="False" />
-            <line number="48" hits="126" branch="True" condition-coverage="100% (2/2)">
+            <line number="37" hits="7" branch="False" />
+            <line number="38" hits="7" branch="False" />
+            <line number="39" hits="7" branch="False" />
+            <line number="42" hits="4" branch="False" />
+            <line number="43" hits="4" branch="False" />
+            <line number="44" hits="4" branch="False" />
+            <line number="45" hits="4" branch="False" />
+            <line number="48" hits="22" branch="False" />
+            <line number="49" hits="154" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="34" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="49" hits="36" branch="False" />
-            <line number="50" hits="36" branch="False" />
-            <line number="51" hits="36" branch="False" />
-            <line number="52" hits="18" branch="False" />
-            <line number="55" hits="38" branch="False" />
-            <line number="56" hits="39" branch="True" condition-coverage="100% (2/2)">
+            <line number="50" hits="44" branch="False" />
+            <line number="51" hits="44" branch="False" />
+            <line number="52" hits="44" branch="False" />
+            <line number="53" hits="22" branch="False" />
+            <line number="56" hits="48" branch="False" />
+            <line number="57" hits="49" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="12" type="jump" coverage="100%" />
+                <condition number="9" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="57" hits="38" branch="True" condition-coverage="100% (2/2)">
+            <line number="58" hits="48" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="60" type="jump" coverage="100%" />
+                <condition number="33" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="59" hits="36" branch="False" />
-            <line number="60" hits="36" branch="False" />
-            <line number="61" hits="36" branch="False" />
-            <line number="64" hits="7" branch="False" />
-            <line number="65" hits="8" branch="True" condition-coverage="100% (2/2)">
+            <line number="59" hits="47" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="81" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="61" hits="45" branch="False" />
+            <line number="62" hits="45" branch="False" />
+            <line number="63" hits="45" branch="False" />
+            <line number="66" hits="8" branch="False" />
+            <line number="67" hits="9" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="20" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="66" hits="6" branch="False" />
-            <line number="67" hits="7" branch="False" />
-            <line number="70" hits="13" branch="False" />
-            <line number="71" hits="18" branch="False" />
-            <line number="72" hits="13" branch="False" />
-            <line number="75" hits="3" branch="False" />
-            <line number="76" hits="4" branch="True" condition-coverage="100% (2/2)">
+            <line number="68" hits="7" branch="False" />
+            <line number="69" hits="8" branch="False" />
+            <line number="72" hits="14" branch="False" />
+            <line number="73" hits="14" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="13" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="74" hits="14" branch="False" />
+            <line number="77" hits="3" branch="False" />
+            <line number="78" hits="4" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="17" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="77" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="79" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="41" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="78" hits="1" branch="False" />
-            <line number="79" hits="1" branch="False" />
             <line number="80" hits="1" branch="False" />
-            <line number="83" hits="7" branch="False" />
-            <line number="84" hits="8" branch="True" condition-coverage="100% (2/2)">
+            <line number="81" hits="1" branch="False" />
+            <line number="82" hits="1" branch="False" />
+            <line number="85" hits="8" branch="False" />
+            <line number="86" hits="9" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="17" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="85" hits="7" branch="True" condition-coverage="100% (2/2)">
+            <line number="87" hits="8" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="41" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="86" hits="5" branch="False" />
-            <line number="87" hits="5" branch="False" />
-            <line number="88" hits="5" branch="False" />
-            <line number="91" hits="3" branch="False" />
-            <line number="92" hits="3" branch="False" />
-            <line number="93" hits="3" branch="False" />
-            <line number="96" hits="2" branch="False" />
-            <line number="97" hits="2" branch="False" />
-            <line number="98" hits="2" branch="False" />
-            <line number="101" hits="5" branch="False" />
-            <line number="102" hits="5" branch="False" />
-            <line number="103" hits="5" branch="False" />
-            <line number="104" hits="5" branch="False" />
-            <line number="21" hits="21" branch="False" />
-            <line number="22" hits="21" branch="False" />
-            <line number="23" hits="21" branch="False" />
-            <line number="24" hits="21" branch="True" condition-coverage="100% (2/2)">
+            <line number="88" hits="6" branch="False" />
+            <line number="89" hits="6" branch="False" />
+            <line number="90" hits="6" branch="False" />
+            <line number="91" hits="6" branch="False" />
+            <line number="94" hits="3" branch="False" />
+            <line number="95" hits="3" branch="False" />
+            <line number="96" hits="3" branch="False" />
+            <line number="99" hits="2" branch="False" />
+            <line number="100" hits="2" branch="False" />
+            <line number="101" hits="2" branch="False" />
+            <line number="104" hits="11" branch="False" />
+            <line number="105" hits="11" branch="False" />
+            <line number="106" hits="11" branch="False" />
+            <line number="107" hits="11" branch="False" />
+            <line number="22" hits="27" branch="False" />
+            <line number="23" hits="27" branch="False" />
+            <line number="24" hits="27" branch="False" />
+            <line number="25" hits="27" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="23" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="25" hits="21" branch="False" />
-            <line number="26" hits="21" branch="False" />
-            <line number="27" hits="21" branch="False" />
-            <line number="29" hits="2" branch="False" />
+            <line number="26" hits="27" branch="False" />
+            <line number="27" hits="27" branch="False" />
+            <line number="28" hits="27" branch="False" />
             <line number="30" hits="2" branch="False" />
             <line number="31" hits="2" branch="False" />
             <line number="32" hits="2" branch="False" />
             <line number="33" hits="2" branch="False" />
+            <line number="34" hits="2" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Avicultura.Domain.Entities.LoteValidation" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\Lote.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="109" hits="5" branch="False" />
-                <line number="110" hits="5" branch="False" />
-                <line number="111" hits="5" branch="False" />
-                <line number="112" hits="5" branch="False" />
+                <line number="112" hits="11" branch="False" />
+                <line number="113" hits="11" branch="False" />
+                <line number="114" hits="11" branch="False" />
+                <line number="115" hits="11" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="109" hits="5" branch="False" />
-            <line number="110" hits="5" branch="False" />
-            <line number="111" hits="5" branch="False" />
-            <line number="112" hits="5" branch="False" />
+            <line number="112" hits="11" branch="False" />
+            <line number="113" hits="11" branch="False" />
+            <line number="114" hits="11" branch="False" />
+            <line number="115" hits="11" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Avicultura.Domain.Entities.TipoAve" filename="source\repos\uai-granja-api\src\UaiGranja.Avicultura.Domain\Entities\TipoAve.cs" line-rate="0.9375" branch-rate="1" complexity="7">
           <methods>
             <method name="get_Raca" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="99" branch="False" />
+                <line number="9" hits="122" branch="False" />
               </lines>
             </method>
             <method name="get_PropositoCriacao" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="99" branch="False" />
+                <line number="10" hits="122" branch="False" />
               </lines>
             </method>
             <method name="get_PesoCorte" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="99" branch="False" />
+                <line number="11" hits="122" branch="False" />
               </lines>
             </method>
             <method name="get_IdadeCorte" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="99" branch="False" />
+                <line number="12" hits="122" branch="False" />
               </lines>
             </method>
             <method name="EhValido" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="46" branch="False" />
-                <line number="26" hits="46" branch="False" />
-                <line number="27" hits="46" branch="False" />
-                <line number="28" hits="46" branch="False" />
+                <line number="25" hits="58" branch="False" />
+                <line number="26" hits="58" branch="False" />
+                <line number="27" hits="58" branch="False" />
+                <line number="28" hits="58" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(UaiGranja.Avicultura.Domain.Enums.RacaEnum,UaiGranja.Avicultura.Domain.Enums.PropositoCriacaoEnum,System.Decimal,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="53" branch="False" />
-                <line number="15" hits="53" branch="False" />
-                <line number="16" hits="53" branch="False" />
-                <line number="17" hits="53" branch="False" />
-                <line number="18" hits="53" branch="False" />
-                <line number="19" hits="53" branch="False" />
-                <line number="20" hits="53" branch="False" />
+                <line number="14" hits="64" branch="False" />
+                <line number="15" hits="64" branch="False" />
+                <line number="16" hits="64" branch="False" />
+                <line number="17" hits="64" branch="False" />
+                <line number="18" hits="64" branch="False" />
+                <line number="19" hits="64" branch="False" />
+                <line number="20" hits="64" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -1242,21 +1298,21 @@
             </method>
           </methods>
           <lines>
-            <line number="9" hits="99" branch="False" />
-            <line number="10" hits="99" branch="False" />
-            <line number="11" hits="99" branch="False" />
-            <line number="12" hits="99" branch="False" />
-            <line number="25" hits="46" branch="False" />
-            <line number="26" hits="46" branch="False" />
-            <line number="27" hits="46" branch="False" />
-            <line number="28" hits="46" branch="False" />
-            <line number="14" hits="53" branch="False" />
-            <line number="15" hits="53" branch="False" />
-            <line number="16" hits="53" branch="False" />
-            <line number="17" hits="53" branch="False" />
-            <line number="18" hits="53" branch="False" />
-            <line number="19" hits="53" branch="False" />
-            <line number="20" hits="53" branch="False" />
+            <line number="9" hits="122" branch="False" />
+            <line number="10" hits="122" branch="False" />
+            <line number="11" hits="122" branch="False" />
+            <line number="12" hits="122" branch="False" />
+            <line number="25" hits="58" branch="False" />
+            <line number="26" hits="58" branch="False" />
+            <line number="27" hits="58" branch="False" />
+            <line number="28" hits="58" branch="False" />
+            <line number="14" hits="64" branch="False" />
+            <line number="15" hits="64" branch="False" />
+            <line number="16" hits="64" branch="False" />
+            <line number="17" hits="64" branch="False" />
+            <line number="18" hits="64" branch="False" />
+            <line number="19" hits="64" branch="False" />
+            <line number="20" hits="64" branch="False" />
             <line number="22" hits="0" branch="False" />
           </lines>
         </class>
@@ -1264,29 +1320,29 @@
           <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="33" hits="46" branch="False" />
-                <line number="34" hits="46" branch="False" />
-                <line number="35" hits="46" branch="False" />
-                <line number="37" hits="46" branch="False" />
-                <line number="39" hits="46" branch="False" />
-                <line number="41" hits="46" branch="False" />
-                <line number="42" hits="46" branch="False" />
+                <line number="33" hits="58" branch="False" />
+                <line number="34" hits="58" branch="False" />
+                <line number="35" hits="58" branch="False" />
+                <line number="37" hits="58" branch="False" />
+                <line number="39" hits="58" branch="False" />
+                <line number="41" hits="58" branch="False" />
+                <line number="42" hits="58" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="33" hits="46" branch="False" />
-            <line number="34" hits="46" branch="False" />
-            <line number="35" hits="46" branch="False" />
-            <line number="37" hits="46" branch="False" />
-            <line number="39" hits="46" branch="False" />
-            <line number="41" hits="46" branch="False" />
-            <line number="42" hits="46" branch="False" />
+            <line number="33" hits="58" branch="False" />
+            <line number="34" hits="58" branch="False" />
+            <line number="35" hits="58" branch="False" />
+            <line number="37" hits="58" branch="False" />
+            <line number="39" hits="58" branch="False" />
+            <line number="41" hits="58" branch="False" />
+            <line number="42" hits="58" branch="False" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="UaiGranja.Avicultura.Domain.Tests" line-rate="0.9864" branch-rate="1" complexity="47">
+    <package name="UaiGranja.Avicultura.Domain.Tests" line-rate="0.9965" branch-rate="1" complexity="60">
       <classes>
         <class name="AutoGeneratedProgram" filename=".nuget\packages\microsoft.net.test.sdk\17.6.3\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -1432,7 +1488,7 @@
             <line number="17" hits="10" branch="False" />
           </lines>
         </class>
-        <class name="UaiGranja.Avicultura.Domain.Tests.GalinheiroTests" filename="source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\GalinheiroTests.cs" line-rate="0.9591" branch-rate="1" complexity="10">
+        <class name="UaiGranja.Avicultura.Domain.Tests.GalinheiroTests" filename="source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\GalinheiroTests.cs" line-rate="1" branch-rate="1" complexity="20">
           <methods>
             <method name="Galinheiro_AdicionarLote_DeveAdicionarLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1485,42 +1541,145 @@
                 <line number="92" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="Galinheiro_AdicionarAve_NaoDeveAdicionarAveGalinheiroInvalido" signature="()" line-rate="0.6" branch-rate="1" complexity="1">
+            <method name="Galinheiro_AdicionarAve_DeveAdicionarAveCodigoNaoUtilizadoEmAveViva" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="97" hits="1" branch="False" />
                 <line number="99" hits="1" branch="False" />
                 <line number="102" hits="1" branch="False" />
-                <line number="105" hits="0" branch="False" />
-                <line number="106" hits="0" branch="False" />
+                <line number="103" hits="1" branch="False" />
+                <line number="104" hits="1" branch="False" />
+                <line number="105" hits="1" branch="False" />
+                <line number="108" hits="1" branch="False" />
+                <line number="109" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="Galinheiro_AdicionarAve_DeveAdicionarAveCodigoNaoUtilizadoEmAveViva" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Galinheiro_AdicionarAve_DeveAdicionarAveEmLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="111" hits="1" branch="False" />
-                <line number="113" hits="1" branch="False" />
+                <line number="114" hits="1" branch="False" />
                 <line number="116" hits="1" branch="False" />
-                <line number="117" hits="1" branch="False" />
-                <line number="118" hits="1" branch="False" />
                 <line number="119" hits="1" branch="False" />
-                <line number="122" hits="1" branch="False" />
-                <line number="123" hits="1" branch="False" />
+                <line number="120" hits="1" branch="False" />
+                <line number="121" hits="1" branch="False" />
+                <line number="124" hits="1" branch="False" />
+                <line number="125" hits="1" branch="False" />
+                <line number="126" hits="1" branch="False" />
               </lines>
             </method>
             <method name="Galinheiro_RealizarAbate_NaoDeveAbaterAveNaoCadastrada" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="128" hits="1" branch="False" />
-                <line number="130" hits="1" branch="False" />
+                <line number="131" hits="1" branch="False" />
                 <line number="133" hits="1" branch="False" />
-                <line number="136" hits="2" branch="False" />
-                <line number="137" hits="1" branch="False" />
+                <line number="136" hits="1" branch="False" />
+                <line number="139" hits="2" branch="False" />
+                <line number="140" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_RealizarAbate_NaoDeveAbaterAveUtilizaLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="145" hits="1" branch="False" />
+                <line number="147" hits="1" branch="False" />
+                <line number="150" hits="2" branch="False" />
+                <line number="151" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_AdicionarAve_NaoDeveAdicionarAveEmLoteAbatido" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="156" hits="1" branch="False" />
+                <line number="158" hits="1" branch="False" />
+                <line number="161" hits="1" branch="False" />
+                <line number="162" hits="1" branch="False" />
+                <line number="163" hits="1" branch="False" />
+                <line number="166" hits="2" branch="False" />
+                <line number="167" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_AdicionarAve_NaoDeveAdicionarAveLoteNaoEncontrado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="173" hits="1" branch="False" />
+                <line number="175" hits="1" branch="False" />
+                <line number="178" hits="1" branch="False" />
+                <line number="179" hits="1" branch="False" />
+                <line number="182" hits="2" branch="False" />
+                <line number="183" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_AdicionarAve_NaoDeveAdicionarAveLoteCapacidadeSuperada" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="188" hits="1" branch="False" />
+                <line number="190" hits="1" branch="False" />
+                <line number="193" hits="1" branch="False" />
+                <line number="194" hits="1" branch="False" />
+                <line number="197" hits="2" branch="False" />
+                <line number="198" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_RealizarAbateLote_NaoDeveAbaterLoteNaoEhUtilizado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="203" hits="1" branch="False" />
+                <line number="205" hits="1" branch="False" />
+                <line number="208" hits="2" branch="False" />
+                <line number="209" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_RealizarAbateLote_NaoDeveAbaterLoteNaoEncontrado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="214" hits="1" branch="False" />
+                <line number="216" hits="1" branch="False" />
+                <line number="219" hits="2" branch="False" />
+                <line number="220" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_EstaVivo_GalinheiroDeveEstarValido" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="225" hits="1" branch="False" />
+                <line number="227" hits="1" branch="False" />
+                <line number="230" hits="1" branch="False" />
+                <line number="233" hits="1" branch="False" />
+                <line number="234" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_EstaVivo_GalinheiroDeveEstarInvalido" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="239" hits="1" branch="False" />
+                <line number="241" hits="1" branch="False" />
+                <line number="244" hits="1" branch="False" />
+                <line number="247" hits="1" branch="False" />
+                <line number="248" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_EstaVivo_GalinheiroNaoDeveUtilizarLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="253" hits="1" branch="False" />
+                <line number="255" hits="1" branch="False" />
+                <line number="258" hits="1" branch="False" />
+                <line number="259" hits="1" branch="False" />
+                <line number="260" hits="1" branch="False" />
+                <line number="263" hits="1" branch="False" />
+                <line number="264" hits="1" branch="False" />
+                <line number="265" hits="1" branch="False" />
+                <line number="266" hits="1" branch="False" />
+                <line number="267" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Galinheiro_EstaVivo_GalinheiroNDeveUtilizarLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="272" hits="1" branch="False" />
+                <line number="274" hits="1" branch="False" />
+                <line number="277" hits="1" branch="False" />
+                <line number="278" hits="1" branch="False" />
+                <line number="281" hits="1" branch="False" />
+                <line number="282" hits="1" branch="False" />
+                <line number="283" hits="2" branch="False" />
+                <line number="284" hits="1" branch="False" />
+                <line number="285" hits="1" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(UaiGranja.Avicultura.Domain.Tests.Fixtures.GalinheiroTestsFixture)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="9" branch="False" />
-                <line number="15" hits="9" branch="False" />
-                <line number="16" hits="9" branch="False" />
-                <line number="17" hits="9" branch="False" />
+                <line number="14" hits="19" branch="False" />
+                <line number="15" hits="19" branch="False" />
+                <line number="16" hits="19" branch="False" />
+                <line number="17" hits="19" branch="False" />
               </lines>
             </method>
           </methods>
@@ -1555,25 +1714,88 @@
             <line number="97" hits="1" branch="False" />
             <line number="99" hits="1" branch="False" />
             <line number="102" hits="1" branch="False" />
-            <line number="105" hits="0" branch="False" />
-            <line number="106" hits="0" branch="False" />
-            <line number="111" hits="1" branch="False" />
-            <line number="113" hits="1" branch="False" />
+            <line number="103" hits="1" branch="False" />
+            <line number="104" hits="1" branch="False" />
+            <line number="105" hits="1" branch="False" />
+            <line number="108" hits="1" branch="False" />
+            <line number="109" hits="1" branch="False" />
+            <line number="114" hits="1" branch="False" />
             <line number="116" hits="1" branch="False" />
-            <line number="117" hits="1" branch="False" />
-            <line number="118" hits="1" branch="False" />
             <line number="119" hits="1" branch="False" />
-            <line number="122" hits="1" branch="False" />
-            <line number="123" hits="1" branch="False" />
-            <line number="128" hits="1" branch="False" />
-            <line number="130" hits="1" branch="False" />
+            <line number="120" hits="1" branch="False" />
+            <line number="121" hits="1" branch="False" />
+            <line number="124" hits="1" branch="False" />
+            <line number="125" hits="1" branch="False" />
+            <line number="126" hits="1" branch="False" />
+            <line number="131" hits="1" branch="False" />
             <line number="133" hits="1" branch="False" />
-            <line number="136" hits="2" branch="False" />
-            <line number="137" hits="1" branch="False" />
-            <line number="14" hits="9" branch="False" />
-            <line number="15" hits="9" branch="False" />
-            <line number="16" hits="9" branch="False" />
-            <line number="17" hits="9" branch="False" />
+            <line number="136" hits="1" branch="False" />
+            <line number="139" hits="2" branch="False" />
+            <line number="140" hits="1" branch="False" />
+            <line number="145" hits="1" branch="False" />
+            <line number="147" hits="1" branch="False" />
+            <line number="150" hits="2" branch="False" />
+            <line number="151" hits="1" branch="False" />
+            <line number="156" hits="1" branch="False" />
+            <line number="158" hits="1" branch="False" />
+            <line number="161" hits="1" branch="False" />
+            <line number="162" hits="1" branch="False" />
+            <line number="163" hits="1" branch="False" />
+            <line number="166" hits="2" branch="False" />
+            <line number="167" hits="1" branch="False" />
+            <line number="173" hits="1" branch="False" />
+            <line number="175" hits="1" branch="False" />
+            <line number="178" hits="1" branch="False" />
+            <line number="179" hits="1" branch="False" />
+            <line number="182" hits="2" branch="False" />
+            <line number="183" hits="1" branch="False" />
+            <line number="188" hits="1" branch="False" />
+            <line number="190" hits="1" branch="False" />
+            <line number="193" hits="1" branch="False" />
+            <line number="194" hits="1" branch="False" />
+            <line number="197" hits="2" branch="False" />
+            <line number="198" hits="1" branch="False" />
+            <line number="203" hits="1" branch="False" />
+            <line number="205" hits="1" branch="False" />
+            <line number="208" hits="2" branch="False" />
+            <line number="209" hits="1" branch="False" />
+            <line number="214" hits="1" branch="False" />
+            <line number="216" hits="1" branch="False" />
+            <line number="219" hits="2" branch="False" />
+            <line number="220" hits="1" branch="False" />
+            <line number="225" hits="1" branch="False" />
+            <line number="227" hits="1" branch="False" />
+            <line number="230" hits="1" branch="False" />
+            <line number="233" hits="1" branch="False" />
+            <line number="234" hits="1" branch="False" />
+            <line number="239" hits="1" branch="False" />
+            <line number="241" hits="1" branch="False" />
+            <line number="244" hits="1" branch="False" />
+            <line number="247" hits="1" branch="False" />
+            <line number="248" hits="1" branch="False" />
+            <line number="253" hits="1" branch="False" />
+            <line number="255" hits="1" branch="False" />
+            <line number="258" hits="1" branch="False" />
+            <line number="259" hits="1" branch="False" />
+            <line number="260" hits="1" branch="False" />
+            <line number="263" hits="1" branch="False" />
+            <line number="264" hits="1" branch="False" />
+            <line number="265" hits="1" branch="False" />
+            <line number="266" hits="1" branch="False" />
+            <line number="267" hits="1" branch="False" />
+            <line number="272" hits="1" branch="False" />
+            <line number="274" hits="1" branch="False" />
+            <line number="277" hits="1" branch="False" />
+            <line number="278" hits="1" branch="False" />
+            <line number="281" hits="1" branch="False" />
+            <line number="282" hits="1" branch="False" />
+            <line number="283" hits="2" branch="False" />
+            <line number="284" hits="1" branch="False" />
+            <line number="285" hits="1" branch="False" />
+            <line number="14" hits="19" branch="False" />
+            <line number="15" hits="19" branch="False" />
+            <line number="16" hits="19" branch="False" />
+            <line number="17" hits="19" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Avicultura.Domain.Tests.HistoricoAveTests" filename="source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\HistoricoTests.cs" line-rate="1" branch-rate="1" complexity="2">
@@ -1704,7 +1926,7 @@
                 <line number="137" hits="3" branch="False" />
               </lines>
             </method>
-            <method name="Lote_EstaVivo_LoteDeveEstarVivoNaoPossuiHistorico" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Lote_EstaVivo_LoteNaoDeveEstarVivoNaoPossuiAve" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="142" hits="1" branch="False" />
                 <line number="144" hits="1" branch="False" />
@@ -1874,7 +2096,7 @@
             <line number="28" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="UaiGranja.Avicultura.Domain.Tests.Fixtures.GalinheiroTestsFixture" filename="source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\Fixtures\GalinheiroTestsFixture.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="UaiGranja.Avicultura.Domain.Tests.Fixtures.GalinheiroTestsFixture" filename="source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\Fixtures\GalinheiroTestsFixture.cs" line-rate="1" branch-rate="1" complexity="7">
           <methods>
             <method name="Dispose" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1883,45 +2105,75 @@
             </method>
             <method name="ObterGalinheiroValido" signature="(System.String,System.Int32,System.Int32,System.Boolean)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="8" branch="False" />
+                <line number="16" hits="18" branch="False" />
+              </lines>
+            </method>
+            <method name="ObterGalinheiroInvalido" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="1" branch="False" />
               </lines>
             </method>
             <method name="ObterLoteValidoVivo" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="3" branch="False" />
-                <line number="20" hits="3" branch="False" />
-                <line number="21" hits="3" branch="False" />
-                <line number="22" hits="3" branch="False" />
-                <line number="23" hits="3" branch="False" />
-                <line number="24" hits="3" branch="False" />
-                <line number="25" hits="3" branch="False" />
-                <line number="27" hits="3" branch="False" />
-                <line number="28" hits="3" branch="False" />
+                <line number="22" hits="6" branch="False" />
+                <line number="23" hits="6" branch="False" />
+                <line number="24" hits="6" branch="False" />
+                <line number="25" hits="6" branch="False" />
+                <line number="26" hits="6" branch="False" />
+                <line number="27" hits="6" branch="False" />
+                <line number="28" hits="6" branch="False" />
+                <line number="30" hits="6" branch="False" />
+                <line number="31" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="ObterLoteValidoSemAve" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="2" branch="False" />
               </lines>
             </method>
             <method name="ObterAveValidaViva" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="31" hits="8" branch="False" />
-                <line number="32" hits="8" branch="False" />
-                <line number="33" hits="8" branch="False" />
+                <line number="37" hits="11" branch="False" />
+                <line number="38" hits="11" branch="False" />
+                <line number="39" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name="ObterAvesValidasVivas" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="13" hits="2" branch="False" />
-            <line number="16" hits="8" branch="False" />
-            <line number="19" hits="3" branch="False" />
-            <line number="20" hits="3" branch="False" />
-            <line number="21" hits="3" branch="False" />
-            <line number="22" hits="3" branch="False" />
-            <line number="23" hits="3" branch="False" />
-            <line number="24" hits="3" branch="False" />
-            <line number="25" hits="3" branch="False" />
-            <line number="27" hits="3" branch="False" />
-            <line number="28" hits="3" branch="False" />
-            <line number="31" hits="8" branch="False" />
-            <line number="32" hits="8" branch="False" />
-            <line number="33" hits="8" branch="False" />
+            <line number="16" hits="18" branch="False" />
+            <line number="19" hits="1" branch="False" />
+            <line number="22" hits="6" branch="False" />
+            <line number="23" hits="6" branch="False" />
+            <line number="24" hits="6" branch="False" />
+            <line number="25" hits="6" branch="False" />
+            <line number="26" hits="6" branch="False" />
+            <line number="27" hits="6" branch="False" />
+            <line number="28" hits="6" branch="False" />
+            <line number="30" hits="6" branch="False" />
+            <line number="31" hits="6" branch="False" />
+            <line number="34" hits="2" branch="False" />
+            <line number="37" hits="11" branch="False" />
+            <line number="38" hits="11" branch="False" />
+            <line number="39" hits="11" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Avicultura.Domain.Tests.Fixtures.LoteTestsFixture" filename="source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\Fixtures\LoteTestsFixture.cs" line-rate="1" branch-rate="1" complexity="3">
@@ -2266,8 +2518,8 @@
             </method>
             <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="17" branch="False" />
-                <line number="9" hits="34" branch="False" />
+                <line number="8" hits="22" branch="False" />
+                <line number="9" hits="44" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.String,System.Exception)" line-rate="0" branch-rate="1" complexity="1">
@@ -2280,8 +2532,8 @@
           <lines>
             <line number="5" hits="0" branch="False" />
             <line number="6" hits="0" branch="False" />
-            <line number="8" hits="17" branch="False" />
-            <line number="9" hits="34" branch="False" />
+            <line number="8" hits="22" branch="False" />
+            <line number="9" hits="44" branch="False" />
             <line number="11" hits="0" branch="False" />
             <line number="12" hits="0" branch="False" />
           </lines>
@@ -2290,12 +2542,12 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="233" branch="False" />
+                <line number="9" hits="309" branch="False" />
               </lines>
             </method>
             <method name="get_ValidationResult" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="261" branch="False" />
+                <line number="10" hits="331" branch="False" />
               </lines>
             </method>
             <method name="get_Notificacoes" signature="()" line-rate="0" branch-rate="0" complexity="2">
@@ -2409,16 +2661,16 @@
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="156" branch="False" />
-                <line number="15" hits="156" branch="False" />
-                <line number="16" hits="156" branch="False" />
-                <line number="17" hits="156" branch="False" />
+                <line number="14" hits="195" branch="False" />
+                <line number="15" hits="195" branch="False" />
+                <line number="16" hits="195" branch="False" />
+                <line number="17" hits="195" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="233" branch="False" />
-            <line number="10" hits="261" branch="False" />
+            <line number="9" hits="309" branch="False" />
+            <line number="10" hits="331" branch="False" />
             <line number="12" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="7" type="jump" coverage="0%" />
@@ -2488,10 +2740,10 @@
             <line number="69" hits="0" branch="False" />
             <line number="72" hits="0" branch="False" />
             <line number="73" hits="0" branch="False" />
-            <line number="14" hits="156" branch="False" />
-            <line number="15" hits="156" branch="False" />
-            <line number="16" hits="156" branch="False" />
-            <line number="17" hits="156" branch="False" />
+            <line number="14" hits="195" branch="False" />
+            <line number="15" hits="195" branch="False" />
+            <line number="16" hits="195" branch="False" />
+            <line number="17" hits="195" branch="False" />
           </lines>
         </class>
         <class name="UaiGranja.Core.Communication.Mediator.MediatorHandler" filename="source\repos\uai-granja-api\src\UaiGranja.Core\Communication\Mediator\MediatorHandler.cs" line-rate="0" branch-rate="1" complexity="1">

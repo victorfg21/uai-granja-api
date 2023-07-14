@@ -17,7 +17,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Não Deve Adicionar Ave Inválida")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_AdicionarAve_AveInvalidaNaoDeveAdicionar()
         {
             //Arrange
@@ -28,7 +28,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Não Deve Adicionar Capacidade Atingida")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_AdicionarAve_CapacidadeLoteExcedidaNaoDeveAdicionar()
         {
             //Arrange
@@ -41,7 +41,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Realizar Pesagem Lote Vivo")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_RealizarPesagem_RealizarPesagemLoteVivo()
         {
             //Arrange
@@ -55,7 +55,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Não Deve Realizar Pesagem Lote Sem Aves")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_RealizarPesagem_NaoDeveRealizarPesagemLoteNaoPossuiAve()
         {
             //Arrange
@@ -66,7 +66,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Realizar Pesagem Lote Já Abatido")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_RealizarAbate_RealizarPesagemLoteAbatido()
         {
             //Arrange
@@ -80,7 +80,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Não Deve Realizar Abate Lote Sem Aves")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_RealizarAbate_NaoDeveRealizarAbateLoteNaoPossuiAve()
         {
             //Arrange
@@ -91,7 +91,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Realizar Pesagem Lote Já Abatido")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_RealizarAbate_RealizarAbateLoteAbatido()
         {
             //Arrange
@@ -105,7 +105,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Verificar Lote Está Vivo")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_EstaVivo_LoteDeveEstarVivo()
         {
             //Arrange
@@ -119,7 +119,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Theory(DisplayName = "Verificar Lote Estar Abatido")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         [InlineData(1500)]
         [InlineData(1800.52)]
         [InlineData(1)]
@@ -136,9 +136,9 @@ namespace UaiGranja.Avicultura.Domain.Tests
             vivo.Should().BeFalse();
         }
 
-        [Fact(DisplayName = "Verificar Lote Está Vivo e Não Possui Historico")]
-        [Trait("Lote", "Lote Entity Trait")]
-        public void Lote_EstaVivo_LoteDeveEstarVivoNaoPossuiHistorico()
+        [Fact(DisplayName = "Verificar Lote Não Está Vivo Não Possui Ave")]
+        [Trait("Avicultura", "Lote Entity Trait")]
+        public void Lote_EstaVivo_LoteNaoDeveEstarVivoNaoPossuiAve()
         {
             //Arrange
             var lote = new Lote();
@@ -147,11 +147,11 @@ namespace UaiGranja.Avicultura.Domain.Tests
             var vivo = lote.EstaVivo();
 
             //Assert
-            vivo.Should().BeTrue();
+            vivo.Should().BeFalse();
         }
 
         [Fact(DisplayName = "Verificar Lote é Valido")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_EstaVivo_LoteDeveEstarValido()
         {
             //Arrange
@@ -165,7 +165,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Fact(DisplayName = "Verificar Lote é Invalido")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         public void Lote_EstaVivo_LoteDeveEstarInvalido()
         {
             //Arrange
@@ -179,7 +179,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Theory(DisplayName = "Alterar Código Lote")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         [InlineData("1500")]
         [InlineData("X2321")]
         [InlineData(null)]
@@ -198,7 +198,7 @@ namespace UaiGranja.Avicultura.Domain.Tests
         }
 
         [Theory(DisplayName = "Alterar Capacidade Lote")]
-        [Trait("Lote", "Lote Entity Trait")]
+        [Trait("Avicultura", "Lote Entity Trait")]
         [InlineData(1500)]
         [InlineData(5)]
         public void Lote_AlterarCapacidade_AlterarNovaCapacidade(int capacidade)
