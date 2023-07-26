@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/services/UaiGranja.Avicultura.Application/obj
+/src/services/UaiGranja.Avicultura.Data/obj
+/src/services/UaiGranja.Avicultura.Data/bin/Debug/net7.0
+/src/services/UaiGranja.Avicultura.Domain/bin/Debug/net7.0
+/src/services/UaiGranja.Avicultura.Domain/obj
+/src/services/UaiGranja.Identidade.API/obj
+/src/web/UaiGranja.WebApp.MVC/bin/Debug/net7.0
+/src/web/UaiGranja.WebApp.MVC/obj
+/src/building blocks/UaiGranja.Core/obj
+/src/services/UaiGranja.Avicultura.Application/bin/Debug/net7.0
