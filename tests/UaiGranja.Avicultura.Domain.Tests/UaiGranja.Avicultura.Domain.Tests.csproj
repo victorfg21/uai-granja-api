@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\UaiGranja.Avicultura.Domain\UaiGranja.Avicultura.Domain.csproj" />
+    <ProjectReference Include="..\..\src\services\UaiGranja.Avicultura.Domain\UaiGranja.Avicultura.Domain.csproj" />
   </ItemGroup>
 
 </Project>

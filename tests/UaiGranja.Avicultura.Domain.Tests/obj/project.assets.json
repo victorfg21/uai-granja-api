@@ -5875,13 +5875,13 @@
     },
     "UaiGranja.Avicultura.Domain/1.0.0": {
       "type": "project",
-      "path": "../../src/UaiGranja.Avicultura.Domain/UaiGranja.Avicultura.Domain.csproj",
-      "msbuildProject": "../../src/UaiGranja.Avicultura.Domain/UaiGranja.Avicultura.Domain.csproj"
+      "path": "../../src/services/UaiGranja.Avicultura.Domain/UaiGranja.Avicultura.Domain.csproj",
+      "msbuildProject": "../../src/services/UaiGranja.Avicultura.Domain/UaiGranja.Avicultura.Domain.csproj"
     },
     "UaiGranja.Core/1.0.0": {
       "type": "project",
-      "path": "../../src/UaiGranja.Core/UaiGranja.Core.csproj",
-      "msbuildProject": "../../src/UaiGranja.Core/UaiGranja.Core.csproj"
+      "path": "../../src/building blocks/UaiGranja.Core/UaiGranja.Core.csproj",
+      "msbuildProject": "../../src/building blocks/UaiGranja.Core/UaiGranja.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5922,8 +5922,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\victo\\source\\repos\\uai-granja-api\\src\\UaiGranja.Avicultura.Domain\\UaiGranja.Avicultura.Domain.csproj": {
-              "projectPath": "C:\\Users\\victo\\source\\repos\\uai-granja-api\\src\\UaiGranja.Avicultura.Domain\\UaiGranja.Avicultura.Domain.csproj"
+            "C:\\Users\\victo\\source\\repos\\uai-granja-api\\src\\services\\UaiGranja.Avicultura.Domain\\UaiGranja.Avicultura.Domain.csproj": {
+              "projectPath": "C:\\Users\\victo\\source\\repos\\uai-granja-api\\src\\services\\UaiGranja.Avicultura.Domain\\UaiGranja.Avicultura.Domain.csproj"
             }
           }
         }

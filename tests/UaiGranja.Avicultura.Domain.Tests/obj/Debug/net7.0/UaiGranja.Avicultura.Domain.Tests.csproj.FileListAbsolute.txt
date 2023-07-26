@@ -1,3 +1,4 @@
+C:\Users\victo\source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\bin\Debug\net7.0\CoverletSourceRootsMapping_UaiGranja.Avicultura.Domain.Tests
 C:\Users\victo\source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\bin\Debug\net7.0\testhost.dll
 C:\Users\victo\source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\bin\Debug\net7.0\testhost.exe
 C:\Users\victo\source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\bin\Debug\net7.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -109,4 +110,3 @@ C:\Users\victo\source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tes
 C:\Users\victo\source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\obj\Debug\net7.0\UaiGranja.Avicultura.Domain.Tests.pdb
 C:\Users\victo\source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\obj\Debug\net7.0\UaiGranja.Avicultura.Domain.Tests.genruntimeconfig.cache
 C:\Users\victo\source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\obj\Debug\net7.0\ref\UaiGranja.Avicultura.Domain.Tests.dll
-C:\Users\victo\source\repos\uai-granja-api\tests\UaiGranja.Avicultura.Domain.Tests\bin\Debug\net7.0\CoverletSourceRootsMapping_UaiGranja.Avicultura.Domain.Tests

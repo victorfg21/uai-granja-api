@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fzvMguZB3wxPe1O8DzNgUnE/oBOvpfkIGWvgi11okf/A5i9rxB+DQgMQthzQAP9m2ANRqmiPOho2gBooydqLcQ==",
+  "dgSpecHash": "20C53hsrPmlB/rsRBBns6xUs9KzeheMGZTXWEyGqemZFst+uyXSOQq3eKu3207xYrc7pI6yvGfEOjPwKTUw9NQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\victo\\source\\repos\\uai-granja-api\\tests\\UaiGranja.Avicultura.Domain.Tests\\UaiGranja.Avicultura.Domain.Tests.csproj",
   "expectedPackageFiles": [
